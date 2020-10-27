@@ -1,0 +1,9 @@
+<map id="draw_sprite" name="draw_sprite">
+<area shape="rect" id="node2" href="$group__Game.html#gad1af7212c4703893c625ad5a5e9107e0" title="Called once per frame in game screen, manages moviment, colision, actions. " alt="" coords="359,40,453,67"/>
+<area shape="rect" id="node4" href="$group__Game-Over-Menu.html#ga8105461ec4f2f3dc83bf6b821b353144" title="Called once per frama, draws the menu and mouse cursor. " alt="" coords="323,116,489,143"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga08b3cc962ee64800e139310f91a3d4b4" title="Draw a sprite in position (x,y), from struct object. " alt="" coords="161,33,253,60"/>
+<area shape="rect" id="node6" href="$group__graphics.html#ga7b24da519204bf650a1e98c993093e94" title="Draw a number into x,y position. " alt="" coords="157,84,257,111"/>
+<area shape="rect" id="node7" href="$scoreboardmenu_8h.html#ab9d590d80ea2e5f467aba3709da3a6c6" title="Called once per frame. " alt="" coords="320,167,492,193"/>
+<area shape="rect" id="node8" href="$group__Main-Menu.html#gab084ce5f50d30f5b66396d4afa61f3a0" title="Called once per frame on main menu. " alt="" coords="143,236,272,263"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="540,141,649,168"/>
+</map>

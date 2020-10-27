@@ -1,0 +1,10 @@
+<map id="draw_text_from_keyboard" name="draw_text_from_keyboard">
+<area shape="rect" id="node2" href="$group__utils.html#ga7891ce0c95b80f1294517ff05b7cb962" title="Get the char from a scancode. " alt="" coords="241,5,340,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga99d2da2559e11200c6b40c469e9977ec" title="Draws a rectangle of given color with given size in given position. " alt="" coords="225,56,356,83"/>
+<area shape="rect" id="node6" href="$group__graphics.html#ga37cbb1079da920cd529418d4a9f83ff2" title="Draw a text in the given position. " alt="" coords="251,107,330,133"/>
+<area shape="rect" id="node9" href="$group__graphics.html#gae70314d2e6e41dae20ce327a13929401" title="Draw video buffer into video memory. " alt="" coords="245,157,336,184"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga1677f4b59f9e0584d82e0b655e4b7fc9" title="Draw horizontal line in given x,y position with given width and color. " alt="" coords="412,56,517,83"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga08c498ffeb0a3962e3b7711b57397741" title="Turns the given x,y position pixel to the given color. " alt="" coords="573,107,679,133"/>
+<area shape="rect" id="node7" href="$group__utils.html#ga8e2a12eed020ad751697c4f2d1a725dc" title="Gets the xpm for a given character. " alt="" coords="413,107,516,133"/>
+<area shape="rect" id="node8" href="$group__graphics.html#gaf7d28831f1ffad3816101e473a54b9be" title="Draw a sprite in position (x,y), from XPM. " alt="" coords="404,157,525,184"/>
+</map>

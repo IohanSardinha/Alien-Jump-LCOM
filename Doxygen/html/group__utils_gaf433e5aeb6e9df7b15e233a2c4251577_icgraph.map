@@ -1,0 +1,7 @@
+<map id="colides" name="colides">
+<area shape="rect" id="node2" href="$group__Game.html#gad1af7212c4703893c625ad5a5e9107e0" title="Called once per frame in game screen, manages moviment, colision, actions. " alt="" coords="158,5,253,32"/>
+<area shape="rect" id="node4" href="$group__Game-Over-Menu.html#gae4cc6accba6062a3b5855bfc3826b215" title="Called once per mouse interupt, manages mouse cursor and click. " alt="" coords="120,56,291,83"/>
+<area shape="rect" id="node5" href="$group__Main-Menu.html#ga4a8e0e77f8775d3742bbda1b8c48fd3c" title="Called once per mouse interupt, manages mouse position and click. " alt="" coords="138,107,273,133"/>
+<area shape="rect" id="node6" href="$scoreboardmenu_8h.html#aef362f3ae7308b6f06ef2a3d01a3f666" title="Called once per mouse interupt, manages position and click. " alt="" coords="116,157,295,184"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="343,81,452,108"/>
+</map>

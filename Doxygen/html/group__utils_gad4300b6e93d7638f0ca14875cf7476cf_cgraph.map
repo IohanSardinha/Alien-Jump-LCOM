@@ -1,0 +1,7 @@
+<map id="change_game_state" name="change_game_state">
+<area shape="rect" id="node2" href="$group__graphics.html#ga97ef658560a953fdb5a8ac8310b31516" title="Fill the screen in black. " alt="" coords="195,5,279,32"/>
+<area shape="rect" id="node6" href="$group__graphics.html#gae70314d2e6e41dae20ce327a13929401" title="Draw video buffer into video memory. " alt="" coords="192,56,283,83"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga99d2da2559e11200c6b40c469e9977ec" title="Draws a rectangle of given color with given size in given position. " alt="" coords="331,5,461,32"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga1677f4b59f9e0584d82e0b655e4b7fc9" title="Draw horizontal line in given x,y position with given width and color. " alt="" coords="509,5,615,32"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga08c498ffeb0a3962e3b7711b57397741" title="Turns the given x,y position pixel to the given color. " alt="" coords="663,5,768,32"/>
+</map>

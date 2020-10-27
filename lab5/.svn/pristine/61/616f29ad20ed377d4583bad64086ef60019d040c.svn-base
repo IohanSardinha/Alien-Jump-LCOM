@@ -1,0 +1,23 @@
+
+#include <lcom/lcf.h>
+//#include <liblm.a>
+#include <machine/int86.h>
+
+#define AH_VBE 0x4F
+
+#define MODE_I 0x105
+#define MODE_II 0x110
+#define MODE_III 0x115
+#define MODE_IV 0x11A
+#define MODE_V 0x14C
+
+
+
+
+int vg_enter(uint16_t mode);
+int vg_fill();
+int (draw_pattern)(uint8_t no_rectangles, uint32_t first, uint8_t step);
+uint8_t get_color_bits(uint32_t color, uint8_t size, uint8_t pos);
+
+//int vg_draw_hline(uint16_t x, uint16_t y, uint16_t len, uint32_t color);
+

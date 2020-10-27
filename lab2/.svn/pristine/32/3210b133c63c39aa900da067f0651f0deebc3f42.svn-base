@@ -1,0 +1,113 @@
+#include <lcom/lcf.h>
+#include <lcom/timer.h>
+
+#include <stdint.h>
+
+#include "i8254.h"
+
+uint32_t count;
+int timerID = 0;
+
+//TODO comment
+int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
+  
+  int response;
+
+  if(timer > 2 || freq <= 0 || freq > TIMER_FREQ)
+    return 1;
+
+  uint8_t msb, lsb;
+
+  uint32_t v_cont = TIMER_FREQ/freq;
+
+  util_get_MSB(v_cont,&msb);
+  util_get_LSB(v_cont,&lsb);
+
+  uint8_t conf, byte;
+  response = timer_get_conf(timer, &conf);
+  util_get_LSB(conf, &byte);
+
+  switch(timer)
+  {
+    case 0:
+      sys_outb(TIMER_CTRL, byte | TIMER_SEL0 | TIMER_LSB_MSB);
+    break;
+    case 1:
+      sys_outb(TIMER_CTRL, byte | TIMER_SEL1 | TIMER_LSB_MSB);
+    break;
+    case 2:
+      sys_outb(TIMER_CTRL, byte | TIMER_SEL2 | TIMER_LSB_MSB);
+    break;
+  }
+
+  response = response || sys_outb(TIMER_0+timer, lsb);
+  response = response || sys_outb(TIMER_0+timer, msb);
+
+  return response;
+}
+
+//TODO comment
+int (timer_subscribe_int)(uint8_t *bit_no) {
+  if(bit_no == NULL)
+    return 1;
+
+  *bit_no = BIT(timerID);
+  return sys_irqsetpolicy(TIMER0_IRQ, IRQ_REENABLE, &timerID);
+}
+
+//TODO comment
+int (timer_unsubscribe_int)() {
+  return sys_irqrmpolicy(&timerID);
+}
+
+//TODO comment
+void (timer_int_handler)() {
+  count++;
+}
+
+int (timer_get_conf)(uint8_t timer, uint8_t *st) {
+  //Returns error code if the timer selected is not in the range[0,2], since uint8_t is unsigned there's no need to check if its lower then zero
+  //Also returns error code if the sys_outb() function to set the timer to read the control word is not successfull
+  if(timer > 2 || !sys_outb(TIMER_CTRL, TIMER_RB_CMD | TIMER_RB_COUNT_ | TIMER_RB_SEL(timer)))
+    return 1;
+  //Get the status for the desired timer and returns if it was successfull or not
+  return util_sys_inb(TIMER_0+timer,st);
+}
+
+//TODO comment function
+int (timer_display_conf)(uint8_t timer, uint8_t st, enum timer_status_field field) {
+  
+  if(timer > 2)
+    return 1;
+
+  union timer_status_field_val conf;
+
+  switch(field)
+  {
+      case tsf_all:
+        conf.byte = st;
+      break;
+      
+      case tsf_initial:
+        conf.in_mode = (st & (BIT(4) | BIT(5))) >> 4;
+      break;
+      
+      case tsf_mode:
+        conf.count_mode = (st & (BIT(1) | BIT(2) | BIT(3))) >> 1;
+        if (conf.count_mode > 5)
+        {
+          conf.count_mode = conf.count_mode & (BIT(0) | BIT(1));
+        }
+      break;
+
+      case tsf_base:
+        conf.bcd = st & BIT(0);
+      break;
+
+      default:
+        //invalid field
+        return 1;
+  }
+
+  return timer_print_config(timer,field, conf);;
+}

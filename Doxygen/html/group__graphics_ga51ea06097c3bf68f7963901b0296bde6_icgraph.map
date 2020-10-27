@@ -1,0 +1,4 @@
+<map id="clear_text" name="clear_text">
+<area shape="rect" id="node2" href="$group__Game.html#gad1af7212c4703893c625ad5a5e9107e0" title="Called once per frame in game screen, manages moviment, colision, actions. " alt="" coords="132,5,227,32"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="275,5,384,32"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="change_game_state" name="change_game_state">
+<area shape="rect" id="node2" href="$group__Game.html#gad1af7212c4703893c625ad5a5e9107e0" title="Called once per frame in game screen, manages moviment, colision, actions. " alt="" coords="241,5,335,32"/>
+<area shape="rect" id="node4" href="$group__Game-Over-Menu.html#ga8a878da05a37cf4c3e82b28282dc5c47" title="Called once per mouse interupt, manages exit and name insertion. " alt="" coords="195,56,381,83"/>
+<area shape="rect" id="node5" href="$group__Game-Over-Menu.html#gae4cc6accba6062a3b5855bfc3826b215" title="Called once per mouse interupt, manages mouse cursor and click. " alt="" coords="203,107,373,133"/>
+<area shape="rect" id="node6" href="$group__Main-Menu.html#gaa455d5f53d6465e1e8c467bbc1231f47" title="Called once per keyboard interupt, manages exit. " alt="" coords="213,157,363,184"/>
+<area shape="rect" id="node7" href="$group__Main-Menu.html#ga4a8e0e77f8775d3742bbda1b8c48fd3c" title="Called once per mouse interupt, manages mouse position and click. " alt="" coords="221,208,355,235"/>
+<area shape="rect" id="node8" href="$scoreboardmenu_8h.html#abee64ac95fec9f526a37a197fa1e8b18" title="Called once per keyboard interupt, manages exit. " alt="" coords="192,259,384,285"/>
+<area shape="rect" id="node9" href="$scoreboardmenu_8h.html#aef362f3ae7308b6f06ef2a3d01a3f666" title="Called once per mouse interupt, manages position and click. " alt="" coords="199,309,377,336"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="432,157,541,184"/>
+</map>

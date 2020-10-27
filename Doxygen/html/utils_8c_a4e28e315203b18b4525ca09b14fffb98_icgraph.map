@@ -1,0 +1,5 @@
+<map id="sort_scores" name="sort_scores">
+<area shape="rect" id="node2" href="$group__utils.html#ga1214184725b2f89d6ae427ecd9041295" title="Loads the scoreboard from file. " alt="" coords="144,31,236,57"/>
+<area shape="rect" id="node3" href="$group__Game-Over-Menu.html#ga8105461ec4f2f3dc83bf6b821b353144" title="Called once per frama, draws the menu and mouse cursor. " alt="" coords="284,5,449,32"/>
+<area shape="rect" id="node4" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="497,31,607,57"/>
+</map>

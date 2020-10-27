@@ -1,0 +1,6 @@
+<map id="swap_c" name="swap_c">
+<area shape="rect" id="node2" href="$utils_8c.html#a4e28e315203b18b4525ca09b14fffb98" title="sort_scores" alt="" coords="120,31,211,57"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga1214184725b2f89d6ae427ecd9041295" title="Loads the scoreboard from file. " alt="" coords="259,31,351,57"/>
+<area shape="rect" id="node4" href="$group__Game-Over-Menu.html#ga8105461ec4f2f3dc83bf6b821b353144" title="Called once per frama, draws the menu and mouse cursor. " alt="" coords="399,5,564,32"/>
+<area shape="rect" id="node5" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="612,31,721,57"/>
+</map>

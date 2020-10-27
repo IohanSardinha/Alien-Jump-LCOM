@@ -1,0 +1,6 @@
+<map id="draw_number" name="draw_number">
+<area shape="rect" id="node2" href="$group__Game.html#gad1af7212c4703893c625ad5a5e9107e0" title="Called once per frame in game screen, manages moviment, colision, actions. " alt="" coords="192,5,287,32"/>
+<area shape="rect" id="node4" href="$group__Game-Over-Menu.html#ga8105461ec4f2f3dc83bf6b821b353144" title="Called once per frama, draws the menu and mouse cursor. " alt="" coords="157,56,322,83"/>
+<area shape="rect" id="node5" href="$scoreboardmenu_8h.html#ab9d590d80ea2e5f467aba3709da3a6c6" title="Called once per frame. " alt="" coords="153,107,325,133"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="373,56,483,83"/>
+</map>

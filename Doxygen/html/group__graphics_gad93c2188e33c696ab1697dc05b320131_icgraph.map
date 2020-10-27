@@ -1,0 +1,4 @@
+<map id="load_numbers" name="load_numbers">
+<area shape="rect" id="node2" href="$group__Main-Menu.html#ga26d3dd4d93472051b4e0bb50e319494b" title="Loads the XPM into xpm_image_t for further use. " alt="" coords="156,5,248,32"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="296,5,405,32"/>
+</map>

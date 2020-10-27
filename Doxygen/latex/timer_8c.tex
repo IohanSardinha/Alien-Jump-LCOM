@@ -1,0 +1,44 @@
+\hypertarget{timer_8c}{}\section{timer.\+c File Reference}
+\label{timer_8c}\index{timer.\+c@{timer.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/timer.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+Include dependency graph for timer.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{timer_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{group__timer_gaf2c04fa8e97ffa748fd3f612886a92a7}{timer\+\_\+set\+\_\+frequency} (uint8\+\_\+t timer, uint32\+\_\+t freq)
+\begin{DoxyCompactList}\small\item\em Changes the operating frequency of a timer. \end{DoxyCompactList}\item 
+int() \hyperlink{group__timer_gac57a7e1140a7e00ad95ac5488d2a671b}{timer\+\_\+subscribe\+\_\+int} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Timer 0 interrupts. \end{DoxyCompactList}\item 
+int() \hyperlink{group__timer_gafabd21de449be154dd65d5fdb2d8045d}{timer\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Timer 0 interrupts. \end{DoxyCompactList}\item 
+void() \hyperlink{group__timer_ga91a2072306c68353712a6b771287dc2c}{timer\+\_\+int\+\_\+handler} ()
+\begin{DoxyCompactList}\small\item\em Timer 0 interrupt handler. \end{DoxyCompactList}\item 
+int() \hyperlink{group__timer_ga703c60b40c8c49607d6ecb6fef82d27a}{timer\+\_\+get\+\_\+conf} (uint8\+\_\+t timer, uint8\+\_\+t $\ast$\hyperlink{group__mouse_ga9a379079ab305d43e4c73334578f9325}{st})
+\begin{DoxyCompactList}\small\item\em Reads the input timer configuration (status) via read-\/back command. \end{DoxyCompactList}\item 
+int() \hyperlink{group__timer_ga140d8f092c0913cabdca949c4a1cc650}{timer\+\_\+display\+\_\+conf} (uint8\+\_\+t timer, uint8\+\_\+t \hyperlink{group__mouse_ga9a379079ab305d43e4c73334578f9325}{st}, enum \hyperlink{group__timer_gada782f3116a896caaa602b70c0c6d8b7}{timer\+\_\+status\+\_\+field} field)
+\begin{DoxyCompactList}\small\item\em Shows timer configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{group__Proj_gae8397a27149e2f76643db0f712e30e82}{timer\+\_\+count}
+\item 
+int \hyperlink{timer_8c_ab33fb7ba4e0c30563ba03500978a8eeb}{timer\+ID} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{timer_8c_ab33fb7ba4e0c30563ba03500978a8eeb}\label{timer_8c_ab33fb7ba4e0c30563ba03500978a8eeb}} 
+\index{timer.\+c@{timer.\+c}!timer\+ID@{timer\+ID}}
+\index{timer\+ID@{timer\+ID}!timer.\+c@{timer.\+c}}
+\subsubsection{\texorpdfstring{timer\+ID}{timerID}}
+{\footnotesize\ttfamily int timer\+ID = 0}
+

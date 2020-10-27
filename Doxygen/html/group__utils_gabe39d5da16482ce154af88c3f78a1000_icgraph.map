@@ -1,0 +1,4 @@
+<map id="draw_text_from_keyboard" name="draw_text_from_keyboard">
+<area shape="rect" id="node2" href="$group__Game-Over-Menu.html#ga8a878da05a37cf4c3e82b28282dc5c47" title="Called once per mouse interupt, manages exit and name insertion. " alt="" coords="225,5,411,32"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="459,5,568,32"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="proj.c" name="proj.c">
+<area shape="rect" id="node5" href="$utils_8h.html" title="utils.h" alt="" coords="486,304,543,331"/>
+<area shape="rect" id="node8" href="$letters_8h.html" title="letters.h" alt="" coords="380,379,449,405"/>
+<area shape="rect" id="node9" href="$graphics_8h.html" title="graphics.h" alt="" coords="1132,229,1215,256"/>
+<area shape="rect" id="node13" href="$timer_8h.html" title="timer.h" alt="" coords="1646,80,1709,107"/>
+<area shape="rect" id="node16" href="$keyboard_8h.html" title="keyboard.h" alt="" coords="1785,80,1871,107"/>
+<area shape="rect" id="node17" href="$mouse_8h.html" title="mouse.h" alt="" coords="1896,80,1968,107"/>
+<area shape="rect" id="node19" href="$i8042_8h.html" title="i8042.h" alt="" coords="287,229,351,256"/>
+<area shape="rect" id="node20" href="$sprites_8h.html" title="sprites.h" alt="" coords="609,229,681,256"/>
+<area shape="rect" id="node21" href="$game_8h.html" title="game.h" alt="" coords="737,155,802,181"/>
+<area shape="rect" id="node22" href="$mainmenu_8h.html" title="mainmenu.h" alt="" coords="416,80,509,107"/>
+<area shape="rect" id="node23" href="$gameovermenu_8h.html" title="gameovermenu.h" alt="" coords="807,80,929,107"/>
+<area shape="rect" id="node25" href="$RTC_8h.html" title="RTC.h" alt="" coords="195,155,256,181"/>
+<area shape="rect" id="node26" href="$scoreboardmenu_8h.html" title="scoreboardmenu.h" alt="" coords="1141,80,1270,107"/>
+<area shape="rect" id="node6" href="$numbers_8h.html" title="numbers.h" alt="" coords="473,379,556,405"/>
+</map>

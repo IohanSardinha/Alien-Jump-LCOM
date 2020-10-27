@@ -1,0 +1,37 @@
+\hypertarget{gameovermenu_8h}{}\section{gameovermenu.\+h File Reference}
+\label{gameovermenu_8h}\index{gameovermenu.\+h@{gameovermenu.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+Include dependency graph for gameovermenu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameovermenu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{gameovermenu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Game-Over-Menu_ga8105461ec4f2f3dc83bf6b821b353144}{game\+\_\+over\+\_\+menu\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Called once per frama, draws the menu and mouse cursor. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game-Over-Menu_ga8a878da05a37cf4c3e82b28282dc5c47}{game\+\_\+over\+\_\+menu\+\_\+keyboard} (uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data})
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, manages exit and name insertion. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game-Over-Menu_gae4cc6accba6062a3b5855bfc3826b215}{game\+\_\+over\+\_\+menu\+\_\+mouse} (struct packet pckt)
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, manages mouse cursor and click. \end{DoxyCompactList}\end{DoxyCompactItemize}

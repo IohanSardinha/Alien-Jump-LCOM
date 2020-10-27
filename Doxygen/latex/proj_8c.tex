@@ -1,0 +1,54 @@
+\hypertarget{proj_8c}{}\section{proj.\+c File Reference}
+\label{proj_8c}\index{proj.\+c@{proj.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}letters.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mainmenu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gameovermenu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scoreboardmenu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+Include dependency graph for proj.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Proj_ga0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int() \hyperlink{group__Proj_ga33bde23e0d2bbde847401c5ac6fb62e0}{proj\+\_\+main\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em Project main loop, basicly a state machine for each screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data}
+\begin{DoxyCompactList}\small\item\em Break code. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Proj_ga96f7c2f0fe863bd78294a8f639e60478}{new\+\_\+scancode}
+\begin{DoxyCompactList}\small\item\em If the scancode recived is new or not. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__Proj_gae8397a27149e2f76643db0f712e30e82}{timer\+\_\+count}
+\item 
+int \hyperlink{group__Proj_gaef160b7437d94056f1dc59646cd5b87d}{score}
+\begin{DoxyCompactList}\small\item\em Player score. \end{DoxyCompactList}\item 
+int \hyperlink{group__Proj_gae08662d87c59faeaf7d329826dd1a0c7}{asteroid\+\_\+vel}
+\begin{DoxyCompactList}\small\item\em Platform y velocity. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Proj_ga1656129c4a4fd8809254194f08f0ac70}{paused}
+\begin{DoxyCompactList}\small\item\em If the game is paused or not. \end{DoxyCompactList}\item 
+enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__Proj_ga38caf7c28534bcd60ff95faf7fcae2d7}{game\+\_\+state} = \hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ac22743f1fc74de09544ecc9bab74a17b}{M\+A\+I\+N\+\_\+\+M\+E\+NU}
+\begin{DoxyCompactList}\small\item\em Current game state. \end{DoxyCompactList}\item 
+int \hyperlink{group__Proj_ga38b3017ff237979dfb1f8bac080e8b74}{fr\+\_\+rate} = 60
+\begin{DoxyCompactList}\small\item\em Game frame rate. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="draw_text" name="draw_text">
+<area shape="rect" id="node2" href="$group__utils.html#ga8e2a12eed020ad751697c4f2d1a725dc" title="Gets the xpm for a given character. " alt="" coords="141,5,244,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#gaf7d28831f1ffad3816101e473a54b9be" title="Draw a sprite in position (x,y), from XPM. " alt="" coords="132,56,253,83"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga08c498ffeb0a3962e3b7711b57397741" title="Turns the given x,y position pixel to the given color. " alt="" coords="301,56,407,83"/>
+</map>

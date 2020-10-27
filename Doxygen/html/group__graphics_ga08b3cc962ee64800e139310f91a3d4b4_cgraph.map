@@ -1,0 +1,4 @@
+<map id="draw_object" name="draw_object">
+<area shape="rect" id="node2" href="$group__graphics.html#ga7f31f56ddc44fb5e02130bbe4a6c3927" title="Draw a sprite in position (x,y), from sprite. " alt="" coords="145,5,235,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga08c498ffeb0a3962e3b7711b57397741" title="Turns the given x,y position pixel to the given color. " alt="" coords="283,5,388,32"/>
+</map>

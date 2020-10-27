@@ -1,0 +1,10 @@
+<map id="gameovermenu.h" name="gameovermenu.h">
+<area shape="rect" id="node6" href="$utils_8h.html" title="utils.h" alt="" coords="270,229,327,256"/>
+<area shape="rect" id="node10" href="$graphics_8h.html" title="graphics.h" alt="" coords="403,155,485,181"/>
+<area shape="rect" id="node14" href="$sprites_8h.html" title="sprites.h" alt="" coords="5,304,77,331"/>
+<area shape="rect" id="node15" href="$i8042_8h.html" title="i8042.h" alt="" coords="689,155,753,181"/>
+<area shape="rect" id="node16" href="$game_8h.html" title="game.h" alt="" coords="330,80,395,107"/>
+<area shape="rect" id="node17" href="$RTC_8h.html" title="RTC.h" alt="" coords="740,80,801,107"/>
+<area shape="rect" id="node7" href="$numbers_8h.html" title="numbers.h" alt="" coords="195,304,277,331"/>
+<area shape="rect" id="node9" href="$letters_8h.html" title="letters.h" alt="" coords="101,304,171,331"/>
+</map>

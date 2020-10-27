@@ -1,0 +1,137 @@
+\hypertarget{group__Proj}{}\section{Proj}
+\label{group__Proj}\index{Proj@{Proj}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Proj_ga0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int() \hyperlink{group__Proj_ga33bde23e0d2bbde847401c5ac6fb62e0}{proj\+\_\+main\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em Project main loop, basicly a state machine for each screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data}
+\begin{DoxyCompactList}\small\item\em Break code. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Proj_ga96f7c2f0fe863bd78294a8f639e60478}{new\+\_\+scancode}
+\begin{DoxyCompactList}\small\item\em If the scancode recived is new or not. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{group__Proj_gae8397a27149e2f76643db0f712e30e82}{timer\+\_\+count}
+\item 
+int \hyperlink{group__Proj_gaef160b7437d94056f1dc59646cd5b87d}{score}
+\begin{DoxyCompactList}\small\item\em Player score. \end{DoxyCompactList}\item 
+int \hyperlink{group__Proj_gae08662d87c59faeaf7d329826dd1a0c7}{asteroid\+\_\+vel}
+\begin{DoxyCompactList}\small\item\em Platform y velocity. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Proj_ga1656129c4a4fd8809254194f08f0ac70}{paused}
+\begin{DoxyCompactList}\small\item\em If the game is paused or not. \end{DoxyCompactList}\item 
+enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__Proj_ga38caf7c28534bcd60ff95faf7fcae2d7}{game\+\_\+state} = \hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ac22743f1fc74de09544ecc9bab74a17b}{M\+A\+I\+N\+\_\+\+M\+E\+NU}
+\begin{DoxyCompactList}\small\item\em Current game state. \end{DoxyCompactList}\item 
+int \hyperlink{group__Proj_ga38b3017ff237979dfb1f8bac080e8b74}{fr\+\_\+rate} = 60
+\begin{DoxyCompactList}\small\item\em Game frame rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contais tha main of the project 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__Proj_ga0ddf1224851353fc92bfbff6f499fa97}\label{group__Proj_ga0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Proj@{Proj}!main@{main}}
+\index{main@{main}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__Proj_ga33bde23e0d2bbde847401c5ac6fb62e0}\label{group__Proj_ga33bde23e0d2bbde847401c5ac6fb62e0}} 
+\index{Proj@{Proj}!proj\+\_\+main\+\_\+loop@{proj\+\_\+main\+\_\+loop}}
+\index{proj\+\_\+main\+\_\+loop@{proj\+\_\+main\+\_\+loop}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{proj\+\_\+main\+\_\+loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Project main loop, basicly a state machine for each screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__Proj_ga33bde23e0d2bbde847401c5ac6fb62e0_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Proj_gae08662d87c59faeaf7d329826dd1a0c7}\label{group__Proj_gae08662d87c59faeaf7d329826dd1a0c7}} 
+\index{Proj@{Proj}!asteroid\+\_\+vel@{asteroid\+\_\+vel}}
+\index{asteroid\+\_\+vel@{asteroid\+\_\+vel}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{asteroid\+\_\+vel}{asteroid\_vel}}
+{\footnotesize\ttfamily int asteroid\+\_\+vel}
+
+
+
+Platform y velocity. 
+
+\mbox{\Hypertarget{group__Proj_ga325819a8e492ac69542e8b31705af6e9}\label{group__Proj_ga325819a8e492ac69542e8b31705af6e9}} 
+\index{Proj@{Proj}!data@{data}}
+\index{data@{data}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+
+
+Break code. 
+
+\mbox{\Hypertarget{group__Proj_ga38b3017ff237979dfb1f8bac080e8b74}\label{group__Proj_ga38b3017ff237979dfb1f8bac080e8b74}} 
+\index{Proj@{Proj}!fr\+\_\+rate@{fr\+\_\+rate}}
+\index{fr\+\_\+rate@{fr\+\_\+rate}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{fr\+\_\+rate}{fr\_rate}}
+{\footnotesize\ttfamily int fr\+\_\+rate = 60}
+
+
+
+Game frame rate. 
+
+\mbox{\Hypertarget{group__Proj_ga38caf7c28534bcd60ff95faf7fcae2d7}\label{group__Proj_ga38caf7c28534bcd60ff95faf7fcae2d7}} 
+\index{Proj@{Proj}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{game\+\_\+state}{game\_state}}
+{\footnotesize\ttfamily enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} = \hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ac22743f1fc74de09544ecc9bab74a17b}{M\+A\+I\+N\+\_\+\+M\+E\+NU}}
+
+
+
+Current game state. 
+
+\mbox{\Hypertarget{group__Proj_ga96f7c2f0fe863bd78294a8f639e60478}\label{group__Proj_ga96f7c2f0fe863bd78294a8f639e60478}} 
+\index{Proj@{Proj}!new\+\_\+scancode@{new\+\_\+scancode}}
+\index{new\+\_\+scancode@{new\+\_\+scancode}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{new\+\_\+scancode}{new\_scancode}}
+{\footnotesize\ttfamily bool new\+\_\+scancode}
+
+
+
+If the scancode recived is new or not. 
+
+\mbox{\Hypertarget{group__Proj_ga1656129c4a4fd8809254194f08f0ac70}\label{group__Proj_ga1656129c4a4fd8809254194f08f0ac70}} 
+\index{Proj@{Proj}!paused@{paused}}
+\index{paused@{paused}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily bool paused}
+
+
+
+If the game is paused or not. 
+
+\mbox{\Hypertarget{group__Proj_gaef160b7437d94056f1dc59646cd5b87d}\label{group__Proj_gaef160b7437d94056f1dc59646cd5b87d}} 
+\index{Proj@{Proj}!score@{score}}
+\index{score@{score}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int score}
+
+
+
+Player score. 
+
+\mbox{\Hypertarget{group__Proj_gae8397a27149e2f76643db0f712e30e82}\label{group__Proj_gae8397a27149e2f76643db0f712e30e82}} 
+\index{Proj@{Proj}!timer\+\_\+count@{timer\+\_\+count}}
+\index{timer\+\_\+count@{timer\+\_\+count}!Proj@{Proj}}
+\subsubsection{\texorpdfstring{timer\+\_\+count}{timer\_count}}
+{\footnotesize\ttfamily uint32\+\_\+t timer\+\_\+count}
+

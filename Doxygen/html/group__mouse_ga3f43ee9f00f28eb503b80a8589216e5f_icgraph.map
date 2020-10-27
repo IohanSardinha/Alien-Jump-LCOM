@@ -1,0 +1,4 @@
+<map id="mouse_read_out_buff" name="mouse_read_out_buff">
+<area shape="rect" id="node2" href="$group__mouse.html#ga210374b50462acdedab00df64d5cea3c" title="mouse_ih" alt="" coords="200,5,279,32"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="327,5,436,32"/>
+</map>

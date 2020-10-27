@@ -1,0 +1,5 @@
+<map id="keyboard_enable_interupts" name="keyboard_enable_interupts">
+<area shape="rect" id="node2" href="$group__keyboard.html#gad6f191b6116f8df3e057322f0c76b66a" title="Write comand to register. " alt="" coords="231,5,405,32"/>
+<area shape="rect" id="node4" href="$group__keyboard.html#ga01f4a2303581946d7d26fdb5ac7c0caf" title="Reads from the out buffer. " alt="" coords="237,56,399,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="453,31,544,57"/>
+</map>

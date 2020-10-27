@@ -1,0 +1,127 @@
+\hypertarget{graphics_8h}{}\section{graphics.\+h File Reference}
+\label{graphics_8h}\index{graphics.\+h@{graphics.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for graphics.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{graphics_8h_a7376fc123d2bb830fae15b92d9990762}{A\+H\+\_\+\+V\+BE}~0x4F
+\item 
+\#define \hyperlink{graphics_8h_ac5224fc0add7b6ec34eca27235efaffb}{M\+O\+D\+E\+\_\+I}~0x105
+\item 
+\#define \hyperlink{graphics_8h_a5d52ac929911e29974eb04d76dbd7d34}{M\+O\+D\+E\+\_\+\+II}~0x110
+\item 
+\#define \hyperlink{graphics_8h_a0078d166fc8b247047f4556738e57d9f}{M\+O\+D\+E\+\_\+\+I\+II}~0x115
+\item 
+\#define \hyperlink{graphics_8h_ace9071a7c13fb4c8bab51728ff73a4b0}{M\+O\+D\+E\+\_\+\+IV}~0x11A
+\item 
+\#define \hyperlink{graphics_8h_a9f35c752706c188fff3a8c43055c351b}{M\+O\+D\+E\+\_\+V}~0x14C
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{group__graphics_gac34ed31db6d6ef68b7167a0c024cac2b}{vg\+\_\+enter} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Enters video mode in the given mode. \end{DoxyCompactList}\item 
+int() \hyperlink{graphics_8h_abd983f84d9522b6deec0e784324357bb}{draw\+\_\+pattern} (uint8\+\_\+t no\+\_\+rectangles, uint32\+\_\+t first, uint8\+\_\+t step)
+\item 
+int() \hyperlink{group__graphics_ga08c498ffeb0a3962e3b7711b57397741}{vg\+\_\+draw\+\_\+pixel} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Turns the given x,y position pixel to the given color. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga1677f4b59f9e0584d82e0b655e4b7fc9}{vg\+\_\+draw\+\_\+hline} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw horizontal line in given x,y position with given width and color. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle of given color with given size in given position. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \hyperlink{graphics_8h_a944f375ceb0ddd10b4a9b2d14c79f5cf}{get\+\_\+color\+\_\+bits} (uint32\+\_\+t color, uint8\+\_\+t \hyperlink{group__Game-Over-Menu_ga439227feff9d7f55384e8780cfc2eb82}{size}, uint8\+\_\+t pos)
+\item 
+int() \hyperlink{group__graphics_gaf7d28831f1ffad3816101e473a54b9be}{draw\+\_\+sprite\+\_\+xpm} (xpm\+\_\+map\+\_\+t xpm, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Draw a sprite in position (x,y), from X\+PM. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga7f31f56ddc44fb5e02130bbe4a6c3927}{draw\+\_\+sprite} (xpm\+\_\+image\+\_\+t sprite, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Draw a sprite in position (x,y), from sprite. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga08b3cc962ee64800e139310f91a3d4b4}{draw\+\_\+object} (\hyperlink{structObject}{Object} object)
+\begin{DoxyCompactList}\small\item\em Draw a sprite in position (x,y), from struct object. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga97ef658560a953fdb5a8ac8310b31516}{fill\+\_\+bckgnd} ()
+\begin{DoxyCompactList}\small\item\em Fill the screen in black. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_gae70314d2e6e41dae20ce327a13929401}{draw\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Draw video buffer into video memory. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga427099c53976d605666e7e2b39238bb9}{free\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Dealocates video buffer. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga7b24da519204bf650a1e98c993093e94}{draw\+\_\+number} (int n, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a number into x,y position. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga3a318192b1144825603071c57fdc4b8e}{clear\+\_\+number} (int n, int x, int y)
+\begin{DoxyCompactList}\small\item\em Clean the number drawn in the x,y position. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga37cbb1079da920cd529418d4a9f83ff2}{draw\+\_\+text} (char $\ast$\hyperlink{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}{str}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a text in the given position. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga51ea06097c3bf68f7963901b0296bde6}{clear\+\_\+text} (char $\ast$\hyperlink{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}{str}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Clear the text drawn in the x,y position. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_gad93c2188e33c696ab1697dc05b320131}{load\+\_\+numbers} ()
+\begin{DoxyCompactList}\small\item\em Load the number xpm into an array for better performance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{graphics_8h_a7376fc123d2bb830fae15b92d9990762}\label{graphics_8h_a7376fc123d2bb830fae15b92d9990762}} 
+\index{graphics.\+h@{graphics.\+h}!A\+H\+\_\+\+V\+BE@{A\+H\+\_\+\+V\+BE}}
+\index{A\+H\+\_\+\+V\+BE@{A\+H\+\_\+\+V\+BE}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{A\+H\+\_\+\+V\+BE}{AH\_VBE}}
+{\footnotesize\ttfamily \#define A\+H\+\_\+\+V\+BE~0x4F}
+
+\mbox{\Hypertarget{graphics_8h_ac5224fc0add7b6ec34eca27235efaffb}\label{graphics_8h_ac5224fc0add7b6ec34eca27235efaffb}} 
+\index{graphics.\+h@{graphics.\+h}!M\+O\+D\+E\+\_\+I@{M\+O\+D\+E\+\_\+I}}
+\index{M\+O\+D\+E\+\_\+I@{M\+O\+D\+E\+\_\+I}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+\_\+I}{MODE\_I}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+\_\+I~0x105}
+
+\mbox{\Hypertarget{graphics_8h_a5d52ac929911e29974eb04d76dbd7d34}\label{graphics_8h_a5d52ac929911e29974eb04d76dbd7d34}} 
+\index{graphics.\+h@{graphics.\+h}!M\+O\+D\+E\+\_\+\+II@{M\+O\+D\+E\+\_\+\+II}}
+\index{M\+O\+D\+E\+\_\+\+II@{M\+O\+D\+E\+\_\+\+II}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+\_\+\+II}{MODE\_II}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+\_\+\+II~0x110}
+
+\mbox{\Hypertarget{graphics_8h_a0078d166fc8b247047f4556738e57d9f}\label{graphics_8h_a0078d166fc8b247047f4556738e57d9f}} 
+\index{graphics.\+h@{graphics.\+h}!M\+O\+D\+E\+\_\+\+I\+II@{M\+O\+D\+E\+\_\+\+I\+II}}
+\index{M\+O\+D\+E\+\_\+\+I\+II@{M\+O\+D\+E\+\_\+\+I\+II}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+\_\+\+I\+II}{MODE\_III}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+\_\+\+I\+II~0x115}
+
+\mbox{\Hypertarget{graphics_8h_ace9071a7c13fb4c8bab51728ff73a4b0}\label{graphics_8h_ace9071a7c13fb4c8bab51728ff73a4b0}} 
+\index{graphics.\+h@{graphics.\+h}!M\+O\+D\+E\+\_\+\+IV@{M\+O\+D\+E\+\_\+\+IV}}
+\index{M\+O\+D\+E\+\_\+\+IV@{M\+O\+D\+E\+\_\+\+IV}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+\_\+\+IV}{MODE\_IV}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+\_\+\+IV~0x11A}
+
+\mbox{\Hypertarget{graphics_8h_a9f35c752706c188fff3a8c43055c351b}\label{graphics_8h_a9f35c752706c188fff3a8c43055c351b}} 
+\index{graphics.\+h@{graphics.\+h}!M\+O\+D\+E\+\_\+V@{M\+O\+D\+E\+\_\+V}}
+\index{M\+O\+D\+E\+\_\+V@{M\+O\+D\+E\+\_\+V}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+\_\+V}{MODE\_V}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+\_\+V~0x14C}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{graphics_8h_abd983f84d9522b6deec0e784324357bb}\label{graphics_8h_abd983f84d9522b6deec0e784324357bb}} 
+\index{graphics.\+h@{graphics.\+h}!draw\+\_\+pattern@{draw\+\_\+pattern}}
+\index{draw\+\_\+pattern@{draw\+\_\+pattern}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+pattern()}{draw\_pattern()}}
+{\footnotesize\ttfamily int() draw\+\_\+pattern (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{no\+\_\+rectangles,  }\item[{uint32\+\_\+t}]{first,  }\item[{uint8\+\_\+t}]{step }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{graphics_8h_a944f375ceb0ddd10b4a9b2d14c79f5cf}\label{graphics_8h_a944f375ceb0ddd10b4a9b2d14c79f5cf}} 
+\index{graphics.\+h@{graphics.\+h}!get\+\_\+color\+\_\+bits@{get\+\_\+color\+\_\+bits}}
+\index{get\+\_\+color\+\_\+bits@{get\+\_\+color\+\_\+bits}!graphics.\+h@{graphics.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+color\+\_\+bits()}{get\_color\_bits()}}
+{\footnotesize\ttfamily uint8\+\_\+t() get\+\_\+color\+\_\+bits (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color,  }\item[{uint8\+\_\+t}]{size,  }\item[{uint8\+\_\+t}]{pos }\end{DoxyParamCaption})}
+

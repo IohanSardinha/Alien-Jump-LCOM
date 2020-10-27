@@ -1,0 +1,331 @@
+\hypertarget{group__Game-Over-Menu}{}\section{Game-\/\+Over-\/\+Menu}
+\label{group__Game-Over-Menu}\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Game-Over-Menu_ga8105461ec4f2f3dc83bf6b821b353144}{game\+\_\+over\+\_\+menu\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Called once per frama, draws the menu and mouse cursor. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game-Over-Menu_gaacffded003ea0e055b93b3cf2bf26293}{update\+\_\+score\+\_\+board} ()
+\begin{DoxyCompactList}\small\item\em Adds the current score the the top 10 scores array and file. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game-Over-Menu_ga8a878da05a37cf4c3e82b28282dc5c47}{game\+\_\+over\+\_\+menu\+\_\+keyboard} (uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data})
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, manages exit and name insertion. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game-Over-Menu_gae4cc6accba6062a3b5855bfc3826b215}{game\+\_\+over\+\_\+menu\+\_\+mouse} (struct packet pckt)
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, manages mouse cursor and click. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__Game-Over-Menu_ga38caf7c28534bcd60ff95faf7fcae2d7}{game\+\_\+state}
+\begin{DoxyCompactList}\small\item\em Current game state. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Game-Over-Menu_ga11932993f5f2c243a9c6e09519cf1b73}{drawn\+\_\+} = false
+\begin{DoxyCompactList}\small\item\em If the program just entered this screen is false, then it turns true. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game-Over-Menu_gaef160b7437d94056f1dc59646cd5b87d}{score}
+\begin{DoxyCompactList}\small\item\em Player score. \end{DoxyCompactList}\item 
+char \hyperlink{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}{str} \mbox{[}99\mbox{]}
+\begin{DoxyCompactList}\small\item\em Will record the user input for the score board. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game-Over-Menu_ga439227feff9d7f55384e8780cfc2eb82}{size} = 0
+\begin{DoxyCompactList}\small\item\em The size of the user input. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game-Over-Menu_ga6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Mouse x position. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game-Over-Menu_gab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}
+\begin{DoxyCompactList}\small\item\em Mouse y position. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game-Over-Menu_gad7f272c01893c7161961744eb23516d0}{o\+\_\+mouse\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Mouse x position in last frame. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game-Over-Menu_ga7c7344b212ca479c18185090a37e0d29}{o\+\_\+mouse\+\_\+y}
+\begin{DoxyCompactList}\small\item\em Mouse y position in last frame. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game-Over-Menu_ga1713b7f6ecba05ea9e8281f216eb8818}{mouse\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Mouse cursor sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game-Over-Menu_ga151ed16274d40549e8aa6715aa4c715a}{exit\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Exit button sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game-Over-Menu_ga75a1070484069c0a4b134cb82e89285f}{game\+\_\+over\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Game over text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game-Over-Menu_ga9c8097218050947104e9eff7ea72ee2a}{score\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Score text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game-Over-Menu_gaa41380dca9e42a7214c4383a057eb1b5}{try\+\_\+again\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em try again button sprite \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game-Over-Menu_ga4e9f74a7ebd652ff9289c657ccbcbad2}{score\+\_\+board\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em score board button sprite \end{DoxyCompactList}\item 
+int \hyperlink{group__Game-Over-Menu_ga10efae42dd260dcc2c52eb07d71da687}{highscores} \mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Top scores array. \end{DoxyCompactList}\item 
+char \hyperlink{group__Game-Over-Menu_ga286661e657548eadd26d0d129c981ea2}{names} \mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]}\mbox{[}255\mbox{]}
+\begin{DoxyCompactList}\small\item\em Top score player name array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contais tha code for the game over screen 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__Game-Over-Menu_ga8105461ec4f2f3dc83bf6b821b353144}\label{group__Game-Over-Menu_ga8105461ec4f2f3dc83bf6b821b353144}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!game\+\_\+over\+\_\+menu\+\_\+frame@{game\+\_\+over\+\_\+menu\+\_\+frame}}
+\index{game\+\_\+over\+\_\+menu\+\_\+frame@{game\+\_\+over\+\_\+menu\+\_\+frame}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{game\+\_\+over\+\_\+menu\+\_\+frame()}{game\_over\_menu\_frame()}}
+{\footnotesize\ttfamily void game\+\_\+over\+\_\+menu\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called once per frama, draws the menu and mouse cursor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Game-Over-Menu_ga8105461ec4f2f3dc83bf6b821b353144_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{group__Game-Over-Menu_ga8105461ec4f2f3dc83bf6b821b353144_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__Game-Over-Menu_ga8a878da05a37cf4c3e82b28282dc5c47}\label{group__Game-Over-Menu_ga8a878da05a37cf4c3e82b28282dc5c47}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!game\+\_\+over\+\_\+menu\+\_\+keyboard@{game\+\_\+over\+\_\+menu\+\_\+keyboard}}
+\index{game\+\_\+over\+\_\+menu\+\_\+keyboard@{game\+\_\+over\+\_\+menu\+\_\+keyboard}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{game\+\_\+over\+\_\+menu\+\_\+keyboard()}{game\_over\_menu\_keyboard()}}
+{\footnotesize\ttfamily void game\+\_\+over\+\_\+menu\+\_\+keyboard (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Called once per mouse interupt, manages exit and name insertion. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Game-Over-Menu_ga8a878da05a37cf4c3e82b28282dc5c47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{group__Game-Over-Menu_ga8a878da05a37cf4c3e82b28282dc5c47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__Game-Over-Menu_gae4cc6accba6062a3b5855bfc3826b215}\label{group__Game-Over-Menu_gae4cc6accba6062a3b5855bfc3826b215}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!game\+\_\+over\+\_\+menu\+\_\+mouse@{game\+\_\+over\+\_\+menu\+\_\+mouse}}
+\index{game\+\_\+over\+\_\+menu\+\_\+mouse@{game\+\_\+over\+\_\+menu\+\_\+mouse}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{game\+\_\+over\+\_\+menu\+\_\+mouse()}{game\_over\_menu\_mouse()}}
+{\footnotesize\ttfamily void game\+\_\+over\+\_\+menu\+\_\+mouse (\begin{DoxyParamCaption}\item[{struct packet}]{pckt }\end{DoxyParamCaption})}
+
+
+
+Called once per mouse interupt, manages mouse cursor and click. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Game-Over-Menu_gae4cc6accba6062a3b5855bfc3826b215_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{group__Game-Over-Menu_gae4cc6accba6062a3b5855bfc3826b215_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__Game-Over-Menu_gaacffded003ea0e055b93b3cf2bf26293}\label{group__Game-Over-Menu_gaacffded003ea0e055b93b3cf2bf26293}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!update\+\_\+score\+\_\+board@{update\+\_\+score\+\_\+board}}
+\index{update\+\_\+score\+\_\+board@{update\+\_\+score\+\_\+board}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{update\+\_\+score\+\_\+board()}{update\_score\_board()}}
+{\footnotesize\ttfamily void update\+\_\+score\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds the current score the the top 10 scores array and file. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Game-Over-Menu_gaacffded003ea0e055b93b3cf2bf26293_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Game-Over-Menu_gaacffded003ea0e055b93b3cf2bf26293_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Game-Over-Menu_ga11932993f5f2c243a9c6e09519cf1b73}\label{group__Game-Over-Menu_ga11932993f5f2c243a9c6e09519cf1b73}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!drawn\+\_\+@{drawn\+\_\+}}
+\index{drawn\+\_\+@{drawn\+\_\+}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{drawn\+\_\+}{drawn\_}}
+{\footnotesize\ttfamily bool drawn\+\_\+ = false}
+
+
+
+If the program just entered this screen is false, then it turns true. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga151ed16274d40549e8aa6715aa4c715a}\label{group__Game-Over-Menu_ga151ed16274d40549e8aa6715aa4c715a}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!exit\+\_\+sprite@{exit\+\_\+sprite}}
+\index{exit\+\_\+sprite@{exit\+\_\+sprite}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{exit\+\_\+sprite}{exit\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t exit\+\_\+sprite}
+
+
+
+Exit button sprite. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga75a1070484069c0a4b134cb82e89285f}\label{group__Game-Over-Menu_ga75a1070484069c0a4b134cb82e89285f}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!game\+\_\+over\+\_\+sprite@{game\+\_\+over\+\_\+sprite}}
+\index{game\+\_\+over\+\_\+sprite@{game\+\_\+over\+\_\+sprite}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{game\+\_\+over\+\_\+sprite}{game\_over\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t game\+\_\+over\+\_\+sprite}
+
+
+
+Game over text sprite. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga38caf7c28534bcd60ff95faf7fcae2d7}\label{group__Game-Over-Menu_ga38caf7c28534bcd60ff95faf7fcae2d7}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{game\+\_\+state}{game\_state}}
+{\footnotesize\ttfamily enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state}}
+
+
+
+Current game state. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga10efae42dd260dcc2c52eb07d71da687}\label{group__Game-Over-Menu_ga10efae42dd260dcc2c52eb07d71da687}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!highscores@{highscores}}
+\index{highscores@{highscores}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{highscores}{highscores}}
+{\footnotesize\ttfamily int highscores\mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]}}
+
+
+
+Top scores array. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga1713b7f6ecba05ea9e8281f216eb8818}\label{group__Game-Over-Menu_ga1713b7f6ecba05ea9e8281f216eb8818}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!mouse\+\_\+sprite@{mouse\+\_\+sprite}}
+\index{mouse\+\_\+sprite@{mouse\+\_\+sprite}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+\_\+sprite}{mouse\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t mouse\+\_\+sprite}
+
+
+
+Mouse cursor sprite. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga6c59af730728bf5260ef828aea2eebee}\label{group__Game-Over-Menu_ga6c59af730728bf5260ef828aea2eebee}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!mouse\+\_\+x@{mouse\+\_\+x}}
+\index{mouse\+\_\+x@{mouse\+\_\+x}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+\_\+x}{mouse\_x}}
+{\footnotesize\ttfamily int mouse\+\_\+x}
+
+
+
+Mouse x position. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_gab21653e455bbca86826aa5f628a5fdb2}\label{group__Game-Over-Menu_gab21653e455bbca86826aa5f628a5fdb2}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!mouse\+\_\+y@{mouse\+\_\+y}}
+\index{mouse\+\_\+y@{mouse\+\_\+y}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+\_\+y}{mouse\_y}}
+{\footnotesize\ttfamily int mouse\+\_\+y}
+
+
+
+Mouse y position. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga286661e657548eadd26d0d129c981ea2}\label{group__Game-Over-Menu_ga286661e657548eadd26d0d129c981ea2}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!names@{names}}
+\index{names@{names}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily char names\mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]}\mbox{[}255\mbox{]}}
+
+
+
+Top score player name array. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_gad7f272c01893c7161961744eb23516d0}\label{group__Game-Over-Menu_gad7f272c01893c7161961744eb23516d0}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!o\+\_\+mouse\+\_\+x@{o\+\_\+mouse\+\_\+x}}
+\index{o\+\_\+mouse\+\_\+x@{o\+\_\+mouse\+\_\+x}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{o\+\_\+mouse\+\_\+x}{o\_mouse\_x}}
+{\footnotesize\ttfamily int o\+\_\+mouse\+\_\+x}
+
+
+
+Mouse x position in last frame. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga7c7344b212ca479c18185090a37e0d29}\label{group__Game-Over-Menu_ga7c7344b212ca479c18185090a37e0d29}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!o\+\_\+mouse\+\_\+y@{o\+\_\+mouse\+\_\+y}}
+\index{o\+\_\+mouse\+\_\+y@{o\+\_\+mouse\+\_\+y}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{o\+\_\+mouse\+\_\+y}{o\_mouse\_y}}
+{\footnotesize\ttfamily int o\+\_\+mouse\+\_\+y}
+
+
+
+Mouse y position in last frame. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_gaef160b7437d94056f1dc59646cd5b87d}\label{group__Game-Over-Menu_gaef160b7437d94056f1dc59646cd5b87d}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!score@{score}}
+\index{score@{score}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int score}
+
+
+
+Player score. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga4e9f74a7ebd652ff9289c657ccbcbad2}\label{group__Game-Over-Menu_ga4e9f74a7ebd652ff9289c657ccbcbad2}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!score\+\_\+board\+\_\+sprite@{score\+\_\+board\+\_\+sprite}}
+\index{score\+\_\+board\+\_\+sprite@{score\+\_\+board\+\_\+sprite}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{score\+\_\+board\+\_\+sprite}{score\_board\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t score\+\_\+board\+\_\+sprite}
+
+
+
+score board button sprite 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga9c8097218050947104e9eff7ea72ee2a}\label{group__Game-Over-Menu_ga9c8097218050947104e9eff7ea72ee2a}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!score\+\_\+sprite@{score\+\_\+sprite}}
+\index{score\+\_\+sprite@{score\+\_\+sprite}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{score\+\_\+sprite}{score\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t score\+\_\+sprite}
+
+
+
+Score text sprite. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_ga439227feff9d7f55384e8780cfc2eb82}\label{group__Game-Over-Menu_ga439227feff9d7f55384e8780cfc2eb82}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!size@{size}}
+\index{size@{size}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int size = 0}
+
+
+
+The size of the user input. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}\label{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!str@{str}}
+\index{str@{str}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily char str\mbox{[}99\mbox{]}}
+
+
+
+Will record the user input for the score board. 
+
+\mbox{\Hypertarget{group__Game-Over-Menu_gaa41380dca9e42a7214c4383a057eb1b5}\label{group__Game-Over-Menu_gaa41380dca9e42a7214c4383a057eb1b5}} 
+\index{Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}!try\+\_\+again\+\_\+sprite@{try\+\_\+again\+\_\+sprite}}
+\index{try\+\_\+again\+\_\+sprite@{try\+\_\+again\+\_\+sprite}!Game-\/\+Over-\/\+Menu@{Game-\/\+Over-\/\+Menu}}
+\subsubsection{\texorpdfstring{try\+\_\+again\+\_\+sprite}{try\_again\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t try\+\_\+again\+\_\+sprite}
+
+
+
+try again button sprite 
+

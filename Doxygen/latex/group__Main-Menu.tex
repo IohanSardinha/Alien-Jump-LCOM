@@ -1,0 +1,361 @@
+\hypertarget{group__Main-Menu}{}\section{Main-\/\+Menu}
+\label{group__Main-Menu}\index{Main-\/\+Menu@{Main-\/\+Menu}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Main-Menu_ga26d3dd4d93472051b4e0bb50e319494b}{load\+\_\+sprites} ()
+\begin{DoxyCompactList}\small\item\em Loads the X\+PM into xpm\+\_\+image\+\_\+t for further use. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_gab084ce5f50d30f5b66396d4afa61f3a0}{main\+\_\+menu\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Called once per frame on main menu. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_gaa455d5f53d6465e1e8c467bbc1231f47}{main\+\_\+menu\+\_\+keyboard} (uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data})
+\begin{DoxyCompactList}\small\item\em Called once per keyboard interupt, manages exit. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_ga4a8e0e77f8775d3742bbda1b8c48fd3c}{main\+\_\+menu\+\_\+mouse} (struct packet pckt)
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, manages mouse position and click. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__Main-Menu_ga38caf7c28534bcd60ff95faf7fcae2d7}{game\+\_\+state}
+\begin{DoxyCompactList}\small\item\em Current game state. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_ga6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x} = \hyperlink{group__utils_ga2cd109632a6dcccaa80b43561b1ab700}{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}/2
+\begin{DoxyCompactList}\small\item\em Mouse x position. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_gab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y} = \hyperlink{group__utils_ga6974d08a74da681b3957b2fead2608b8}{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}/2
+\begin{DoxyCompactList}\small\item\em Mouse y position. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_gad7f272c01893c7161961744eb23516d0}{o\+\_\+mouse\+\_\+x} = 0
+\begin{DoxyCompactList}\small\item\em Mouse x position in last frame. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_ga7c7344b212ca479c18185090a37e0d29}{o\+\_\+mouse\+\_\+y} = 0
+\begin{DoxyCompactList}\small\item\em Mouse y position in last frame. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga1713b7f6ecba05ea9e8281f216eb8818}{mouse\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Mouse cursor sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga69acbc91c439d0d9f047cbe70ade84cc}{alien\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Alien player sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga45f80f61d0103ffc208c2d0493380fb2}{asteroid\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Asteroid sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga06a70f098733d826cb9d8e81e7104983}{broken\+\_\+asteroid\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Broken asteroid sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga5a4cfb92e48a82e5d50c87e4bc632970}{background\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Background sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga55fa0635c490a8f9333972d949a5216e}{title\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Title name sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga5bb71c838fd9ce7847f379d2c17483ab}{how\+\_\+to\+\_\+play\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em How to play text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga522a4ef9103746c5c1ba61e915e39f0a}{start\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Start button sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga151ed16274d40549e8aa6715aa4c715a}{exit\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Exit button sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga75a1070484069c0a4b134cb82e89285f}{game\+\_\+over\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Game over text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga9c8097218050947104e9eff7ea72ee2a}{score\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Score text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_gaa41380dca9e42a7214c4383a057eb1b5}{try\+\_\+again\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em try again button sprite \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga4e9f74a7ebd652ff9289c657ccbcbad2}{score\+\_\+board\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em score board button sprite \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga6e4a5f1f16e719a78ad8112fba87dc55}{top10\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em top 10 text sprite \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga794827f066c5e8fa039cae3a45f7b2c0}{title\+\_\+screen\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em title screen button sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contais tha code for the main menu screen 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__Main-Menu_ga26d3dd4d93472051b4e0bb50e319494b}\label{group__Main-Menu_ga26d3dd4d93472051b4e0bb50e319494b}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!load\+\_\+sprites@{load\+\_\+sprites}}
+\index{load\+\_\+sprites@{load\+\_\+sprites}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{load\+\_\+sprites()}{load\_sprites()}}
+{\footnotesize\ttfamily void load\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the X\+PM into xpm\+\_\+image\+\_\+t for further use. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Main-Menu_ga26d3dd4d93472051b4e0bb50e319494b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{group__Main-Menu_ga26d3dd4d93472051b4e0bb50e319494b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__Main-Menu_gab084ce5f50d30f5b66396d4afa61f3a0}\label{group__Main-Menu_gab084ce5f50d30f5b66396d4afa61f3a0}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!main\+\_\+menu\+\_\+frame@{main\+\_\+menu\+\_\+frame}}
+\index{main\+\_\+menu\+\_\+frame@{main\+\_\+menu\+\_\+frame}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{main\+\_\+menu\+\_\+frame()}{main\_menu\_frame()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called once per frame on main menu. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Main-Menu_gab084ce5f50d30f5b66396d4afa61f3a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{group__Main-Menu_gab084ce5f50d30f5b66396d4afa61f3a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__Main-Menu_gaa455d5f53d6465e1e8c467bbc1231f47}\label{group__Main-Menu_gaa455d5f53d6465e1e8c467bbc1231f47}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!main\+\_\+menu\+\_\+keyboard@{main\+\_\+menu\+\_\+keyboard}}
+\index{main\+\_\+menu\+\_\+keyboard@{main\+\_\+menu\+\_\+keyboard}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{main\+\_\+menu\+\_\+keyboard()}{main\_menu\_keyboard()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+\_\+keyboard (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Called once per keyboard interupt, manages exit. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Main-Menu_gaa455d5f53d6465e1e8c467bbc1231f47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{group__Main-Menu_gaa455d5f53d6465e1e8c467bbc1231f47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__Main-Menu_ga4a8e0e77f8775d3742bbda1b8c48fd3c}\label{group__Main-Menu_ga4a8e0e77f8775d3742bbda1b8c48fd3c}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!main\+\_\+menu\+\_\+mouse@{main\+\_\+menu\+\_\+mouse}}
+\index{main\+\_\+menu\+\_\+mouse@{main\+\_\+menu\+\_\+mouse}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{main\+\_\+menu\+\_\+mouse()}{main\_menu\_mouse()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+\_\+mouse (\begin{DoxyParamCaption}\item[{struct packet}]{pckt }\end{DoxyParamCaption})}
+
+
+
+Called once per mouse interupt, manages mouse position and click. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__Main-Menu_ga4a8e0e77f8775d3742bbda1b8c48fd3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{group__Main-Menu_ga4a8e0e77f8775d3742bbda1b8c48fd3c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__Main-Menu_ga69acbc91c439d0d9f047cbe70ade84cc}\label{group__Main-Menu_ga69acbc91c439d0d9f047cbe70ade84cc}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!alien\+\_\+sprite@{alien\+\_\+sprite}}
+\index{alien\+\_\+sprite@{alien\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{alien\+\_\+sprite}{alien\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t alien\+\_\+sprite}
+
+
+
+Alien player sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga45f80f61d0103ffc208c2d0493380fb2}\label{group__Main-Menu_ga45f80f61d0103ffc208c2d0493380fb2}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!asteroid\+\_\+sprite@{asteroid\+\_\+sprite}}
+\index{asteroid\+\_\+sprite@{asteroid\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{asteroid\+\_\+sprite}{asteroid\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t asteroid\+\_\+sprite}
+
+
+
+Asteroid sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga5a4cfb92e48a82e5d50c87e4bc632970}\label{group__Main-Menu_ga5a4cfb92e48a82e5d50c87e4bc632970}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!background\+\_\+sprite@{background\+\_\+sprite}}
+\index{background\+\_\+sprite@{background\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{background\+\_\+sprite}{background\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t background\+\_\+sprite}
+
+
+
+Background sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga06a70f098733d826cb9d8e81e7104983}\label{group__Main-Menu_ga06a70f098733d826cb9d8e81e7104983}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!broken\+\_\+asteroid\+\_\+sprite@{broken\+\_\+asteroid\+\_\+sprite}}
+\index{broken\+\_\+asteroid\+\_\+sprite@{broken\+\_\+asteroid\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{broken\+\_\+asteroid\+\_\+sprite}{broken\_asteroid\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t broken\+\_\+asteroid\+\_\+sprite}
+
+
+
+Broken asteroid sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga151ed16274d40549e8aa6715aa4c715a}\label{group__Main-Menu_ga151ed16274d40549e8aa6715aa4c715a}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!exit\+\_\+sprite@{exit\+\_\+sprite}}
+\index{exit\+\_\+sprite@{exit\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{exit\+\_\+sprite}{exit\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t exit\+\_\+sprite}
+
+
+
+Exit button sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga75a1070484069c0a4b134cb82e89285f}\label{group__Main-Menu_ga75a1070484069c0a4b134cb82e89285f}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!game\+\_\+over\+\_\+sprite@{game\+\_\+over\+\_\+sprite}}
+\index{game\+\_\+over\+\_\+sprite@{game\+\_\+over\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{game\+\_\+over\+\_\+sprite}{game\_over\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t game\+\_\+over\+\_\+sprite}
+
+
+
+Game over text sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga38caf7c28534bcd60ff95faf7fcae2d7}\label{group__Main-Menu_ga38caf7c28534bcd60ff95faf7fcae2d7}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{game\+\_\+state}{game\_state}}
+{\footnotesize\ttfamily enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state}}
+
+
+
+Current game state. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga5bb71c838fd9ce7847f379d2c17483ab}\label{group__Main-Menu_ga5bb71c838fd9ce7847f379d2c17483ab}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!how\+\_\+to\+\_\+play\+\_\+sprite@{how\+\_\+to\+\_\+play\+\_\+sprite}}
+\index{how\+\_\+to\+\_\+play\+\_\+sprite@{how\+\_\+to\+\_\+play\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{how\+\_\+to\+\_\+play\+\_\+sprite}{how\_to\_play\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t how\+\_\+to\+\_\+play\+\_\+sprite}
+
+
+
+How to play text sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga1713b7f6ecba05ea9e8281f216eb8818}\label{group__Main-Menu_ga1713b7f6ecba05ea9e8281f216eb8818}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!mouse\+\_\+sprite@{mouse\+\_\+sprite}}
+\index{mouse\+\_\+sprite@{mouse\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+\_\+sprite}{mouse\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t mouse\+\_\+sprite}
+
+
+
+Mouse cursor sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga6c59af730728bf5260ef828aea2eebee}\label{group__Main-Menu_ga6c59af730728bf5260ef828aea2eebee}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!mouse\+\_\+x@{mouse\+\_\+x}}
+\index{mouse\+\_\+x@{mouse\+\_\+x}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+\_\+x}{mouse\_x}}
+{\footnotesize\ttfamily int mouse\+\_\+x = \hyperlink{group__utils_ga2cd109632a6dcccaa80b43561b1ab700}{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}/2}
+
+
+
+Mouse x position. 
+
+\mbox{\Hypertarget{group__Main-Menu_gab21653e455bbca86826aa5f628a5fdb2}\label{group__Main-Menu_gab21653e455bbca86826aa5f628a5fdb2}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!mouse\+\_\+y@{mouse\+\_\+y}}
+\index{mouse\+\_\+y@{mouse\+\_\+y}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+\_\+y}{mouse\_y}}
+{\footnotesize\ttfamily int mouse\+\_\+y = \hyperlink{group__utils_ga6974d08a74da681b3957b2fead2608b8}{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}/2}
+
+
+
+Mouse y position. 
+
+\mbox{\Hypertarget{group__Main-Menu_gad7f272c01893c7161961744eb23516d0}\label{group__Main-Menu_gad7f272c01893c7161961744eb23516d0}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!o\+\_\+mouse\+\_\+x@{o\+\_\+mouse\+\_\+x}}
+\index{o\+\_\+mouse\+\_\+x@{o\+\_\+mouse\+\_\+x}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{o\+\_\+mouse\+\_\+x}{o\_mouse\_x}}
+{\footnotesize\ttfamily int o\+\_\+mouse\+\_\+x = 0}
+
+
+
+Mouse x position in last frame. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga7c7344b212ca479c18185090a37e0d29}\label{group__Main-Menu_ga7c7344b212ca479c18185090a37e0d29}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!o\+\_\+mouse\+\_\+y@{o\+\_\+mouse\+\_\+y}}
+\index{o\+\_\+mouse\+\_\+y@{o\+\_\+mouse\+\_\+y}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{o\+\_\+mouse\+\_\+y}{o\_mouse\_y}}
+{\footnotesize\ttfamily int o\+\_\+mouse\+\_\+y = 0}
+
+
+
+Mouse y position in last frame. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga4e9f74a7ebd652ff9289c657ccbcbad2}\label{group__Main-Menu_ga4e9f74a7ebd652ff9289c657ccbcbad2}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!score\+\_\+board\+\_\+sprite@{score\+\_\+board\+\_\+sprite}}
+\index{score\+\_\+board\+\_\+sprite@{score\+\_\+board\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{score\+\_\+board\+\_\+sprite}{score\_board\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t score\+\_\+board\+\_\+sprite}
+
+
+
+score board button sprite 
+
+\mbox{\Hypertarget{group__Main-Menu_ga9c8097218050947104e9eff7ea72ee2a}\label{group__Main-Menu_ga9c8097218050947104e9eff7ea72ee2a}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!score\+\_\+sprite@{score\+\_\+sprite}}
+\index{score\+\_\+sprite@{score\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{score\+\_\+sprite}{score\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t score\+\_\+sprite}
+
+
+
+Score text sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga522a4ef9103746c5c1ba61e915e39f0a}\label{group__Main-Menu_ga522a4ef9103746c5c1ba61e915e39f0a}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!start\+\_\+sprite@{start\+\_\+sprite}}
+\index{start\+\_\+sprite@{start\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{start\+\_\+sprite}{start\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t start\+\_\+sprite}
+
+
+
+Start button sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga794827f066c5e8fa039cae3a45f7b2c0}\label{group__Main-Menu_ga794827f066c5e8fa039cae3a45f7b2c0}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!title\+\_\+screen\+\_\+sprite@{title\+\_\+screen\+\_\+sprite}}
+\index{title\+\_\+screen\+\_\+sprite@{title\+\_\+screen\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{title\+\_\+screen\+\_\+sprite}{title\_screen\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t title\+\_\+screen\+\_\+sprite}
+
+
+
+title screen button sprite 
+
+\mbox{\Hypertarget{group__Main-Menu_ga55fa0635c490a8f9333972d949a5216e}\label{group__Main-Menu_ga55fa0635c490a8f9333972d949a5216e}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!title\+\_\+sprite@{title\+\_\+sprite}}
+\index{title\+\_\+sprite@{title\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{title\+\_\+sprite}{title\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t title\+\_\+sprite}
+
+
+
+Title name sprite. 
+
+\mbox{\Hypertarget{group__Main-Menu_ga6e4a5f1f16e719a78ad8112fba87dc55}\label{group__Main-Menu_ga6e4a5f1f16e719a78ad8112fba87dc55}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!top10\+\_\+sprite@{top10\+\_\+sprite}}
+\index{top10\+\_\+sprite@{top10\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{top10\+\_\+sprite}{top10\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t top10\+\_\+sprite}
+
+
+
+top 10 text sprite 
+
+\mbox{\Hypertarget{group__Main-Menu_gaa41380dca9e42a7214c4383a057eb1b5}\label{group__Main-Menu_gaa41380dca9e42a7214c4383a057eb1b5}} 
+\index{Main-\/\+Menu@{Main-\/\+Menu}!try\+\_\+again\+\_\+sprite@{try\+\_\+again\+\_\+sprite}}
+\index{try\+\_\+again\+\_\+sprite@{try\+\_\+again\+\_\+sprite}!Main-\/\+Menu@{Main-\/\+Menu}}
+\subsubsection{\texorpdfstring{try\+\_\+again\+\_\+sprite}{try\_again\_sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t try\+\_\+again\+\_\+sprite}
+
+
+
+try again button sprite 
+

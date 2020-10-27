@@ -1,0 +1,5 @@
+<map id="getCodeChar" name="getCodeChar">
+<area shape="rect" id="node2" href="$group__utils.html#gabe39d5da16482ce154af88c3f78a1000" title="Draw a text in screen from the user input. " alt="" coords="152,5,324,32"/>
+<area shape="rect" id="node3" href="$group__Game-Over-Menu.html#ga8a878da05a37cf4c3e82b28282dc5c47" title="Called once per mouse interupt, manages exit and name insertion. " alt="" coords="372,5,557,32"/>
+<area shape="rect" id="node4" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="605,5,715,32"/>
+</map>

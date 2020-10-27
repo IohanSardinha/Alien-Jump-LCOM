@@ -1,0 +1,11 @@
+<map id="scoreboardmenu.c" name="scoreboardmenu.c">
+<area shape="rect" id="node3" href="$gameovermenu_8h.html" title="gameovermenu.h" alt="" coords="308,80,431,107"/>
+<area shape="rect" id="node7" href="$utils_8h.html" title="utils.h" alt="" coords="325,304,382,331"/>
+<area shape="rect" id="node11" href="$graphics_8h.html" title="graphics.h" alt="" coords="545,229,628,256"/>
+<area shape="rect" id="node15" href="$sprites_8h.html" title="sprites.h" alt="" coords="92,379,164,405"/>
+<area shape="rect" id="node16" href="$i8042_8h.html" title="i8042.h" alt="" coords="457,229,521,256"/>
+<area shape="rect" id="node17" href="$game_8h.html" title="game.h" alt="" coords="337,155,402,181"/>
+<area shape="rect" id="node18" href="$RTC_8h.html" title="RTC.h" alt="" coords="477,155,539,181"/>
+<area shape="rect" id="node8" href="$numbers_8h.html" title="numbers.h" alt="" coords="188,379,271,405"/>
+<area shape="rect" id="node10" href="$letters_8h.html" title="letters.h" alt="" coords="295,379,364,405"/>
+</map>

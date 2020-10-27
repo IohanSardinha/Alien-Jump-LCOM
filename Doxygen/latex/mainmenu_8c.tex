@@ -1,0 +1,65 @@
+\hypertarget{mainmenu_8c}{}\section{mainmenu.\+c File Reference}
+\label{mainmenu_8c}\index{mainmenu.\+c@{mainmenu.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mainmenu.\+h\char`\"{}}\newline
+Include dependency graph for mainmenu.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainmenu_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Main-Menu_ga26d3dd4d93472051b4e0bb50e319494b}{load\+\_\+sprites} ()
+\begin{DoxyCompactList}\small\item\em Loads the X\+PM into xpm\+\_\+image\+\_\+t for further use. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_gab084ce5f50d30f5b66396d4afa61f3a0}{main\+\_\+menu\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Called once per frame on main menu. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_gaa455d5f53d6465e1e8c467bbc1231f47}{main\+\_\+menu\+\_\+keyboard} (uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data})
+\begin{DoxyCompactList}\small\item\em Called once per keyboard interupt, manages exit. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_ga4a8e0e77f8775d3742bbda1b8c48fd3c}{main\+\_\+menu\+\_\+mouse} (struct packet pckt)
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, manages mouse position and click. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__Main-Menu_ga38caf7c28534bcd60ff95faf7fcae2d7}{game\+\_\+state}
+\begin{DoxyCompactList}\small\item\em Current game state. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_ga6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x} = \hyperlink{group__utils_ga2cd109632a6dcccaa80b43561b1ab700}{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}/2
+\begin{DoxyCompactList}\small\item\em Mouse x position. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_gab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y} = \hyperlink{group__utils_ga6974d08a74da681b3957b2fead2608b8}{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}/2
+\begin{DoxyCompactList}\small\item\em Mouse y position. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_gad7f272c01893c7161961744eb23516d0}{o\+\_\+mouse\+\_\+x} = 0
+\begin{DoxyCompactList}\small\item\em Mouse x position in last frame. \end{DoxyCompactList}\item 
+int \hyperlink{group__Main-Menu_ga7c7344b212ca479c18185090a37e0d29}{o\+\_\+mouse\+\_\+y} = 0
+\begin{DoxyCompactList}\small\item\em Mouse y position in last frame. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga1713b7f6ecba05ea9e8281f216eb8818}{mouse\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Mouse cursor sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga69acbc91c439d0d9f047cbe70ade84cc}{alien\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Alien player sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga45f80f61d0103ffc208c2d0493380fb2}{asteroid\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Asteroid sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga06a70f098733d826cb9d8e81e7104983}{broken\+\_\+asteroid\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Broken asteroid sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga5a4cfb92e48a82e5d50c87e4bc632970}{background\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Background sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga55fa0635c490a8f9333972d949a5216e}{title\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Title name sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga5bb71c838fd9ce7847f379d2c17483ab}{how\+\_\+to\+\_\+play\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em How to play text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga522a4ef9103746c5c1ba61e915e39f0a}{start\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Start button sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga151ed16274d40549e8aa6715aa4c715a}{exit\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Exit button sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga75a1070484069c0a4b134cb82e89285f}{game\+\_\+over\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Game over text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga9c8097218050947104e9eff7ea72ee2a}{score\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Score text sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_gaa41380dca9e42a7214c4383a057eb1b5}{try\+\_\+again\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em try again button sprite \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga4e9f74a7ebd652ff9289c657ccbcbad2}{score\+\_\+board\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em score board button sprite \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga6e4a5f1f16e719a78ad8112fba87dc55}{top10\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em top 10 text sprite \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Main-Menu_ga794827f066c5e8fa039cae3a45f7b2c0}{title\+\_\+screen\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em title screen button sprite \end{DoxyCompactList}\end{DoxyCompactItemize}

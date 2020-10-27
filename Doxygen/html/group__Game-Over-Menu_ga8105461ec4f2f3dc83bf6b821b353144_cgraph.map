@@ -1,0 +1,15 @@
+<map id="game_over_menu_frame" name="game_over_menu_frame">
+<area shape="rect" id="node2" href="$group__graphics.html#ga99d2da2559e11200c6b40c469e9977ec" title="Draws a rectangle of given color with given size in given position. " alt="" coords="219,84,349,111"/>
+<area shape="rect" id="node5" href="$group__graphics.html#ga7f31f56ddc44fb5e02130bbe4a6c3927" title="Draw a sprite in position (x,y), from sprite. " alt="" coords="413,8,503,35"/>
+<area shape="rect" id="node6" href="$group__utils.html#ga1214184725b2f89d6ae427ecd9041295" title="Loads the scoreboard from file. " alt="" coords="238,185,330,212"/>
+<area shape="rect" id="node10" href="$group__graphics.html#ga37cbb1079da920cd529418d4a9f83ff2" title="Draw a text in the given position. " alt="" coords="245,135,323,161"/>
+<area shape="rect" id="node13" href="$group__graphics.html#ga7b24da519204bf650a1e98c993093e94" title="Draw a number into x,y position. " alt="" coords="234,33,334,60"/>
+<area shape="rect" id="node14" href="$group__graphics.html#gae70314d2e6e41dae20ce327a13929401" title="Draw video buffer into video memory. " alt="" coords="239,236,329,263"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga1677f4b59f9e0584d82e0b655e4b7fc9" title="Draw horizontal line in given x,y position with given width and color. " alt="" coords="405,59,511,85"/>
+<area shape="rect" id="node4" href="$group__graphics.html#ga08c498ffeb0a3962e3b7711b57397741" title="Turns the given x,y position pixel to the given color. " alt="" coords="567,59,672,85"/>
+<area shape="rect" id="node7" href="$utils_8c.html#a4e28e315203b18b4525ca09b14fffb98" title="sort_scores" alt="" coords="413,211,503,237"/>
+<area shape="rect" id="node8" href="$utils_8c.html#a34615d175cd22e5e2cccb4cfce61822d" title="swap_i" alt="" coords="588,236,651,263"/>
+<area shape="rect" id="node9" href="$utils_8c.html#aaa1b351d3bffbe47c309ec8c8efdf24d" title="swap_c" alt="" coords="586,185,653,212"/>
+<area shape="rect" id="node11" href="$group__utils.html#ga8e2a12eed020ad751697c4f2d1a725dc" title="Gets the xpm for a given character. " alt="" coords="407,160,509,187"/>
+<area shape="rect" id="node12" href="$group__graphics.html#gaf7d28831f1ffad3816101e473a54b9be" title="Draw a sprite in position (x,y), from XPM. " alt="" coords="397,109,519,136"/>
+</map>

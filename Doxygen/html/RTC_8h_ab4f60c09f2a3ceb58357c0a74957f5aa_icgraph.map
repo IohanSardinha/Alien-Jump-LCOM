@@ -1,0 +1,8 @@
+<map id="rtc_write" name="rtc_write">
+<area shape="rect" id="node2" href="$RTC_8h.html#ac9918254a972e2a746dd1bf14e48609f" title="rtc_clear_reg_C" alt="" coords="125,31,240,57"/>
+<area shape="rect" id="node3" href="$RTC_8h.html#a698132eddf8c82c4cbd6c00cbef8d4cc" title="get_formated_date" alt="" coords="288,31,419,57"/>
+<area shape="rect" id="node4" href="$group__Game-Over-Menu.html#gaacffded003ea0e055b93b3cf2bf26293" title="Adds the current score the the top 10 scores array and file. " alt="" coords="467,31,605,57"/>
+<area shape="rect" id="node5" href="$group__Game-Over-Menu.html#ga8a878da05a37cf4c3e82b28282dc5c47" title="Called once per mouse interupt, manages exit and name insertion. " alt="" coords="653,5,839,32"/>
+<area shape="rect" id="node7" href="$group__Game-Over-Menu.html#gae4cc6accba6062a3b5855bfc3826b215" title="Called once per mouse interupt, manages mouse cursor and click. " alt="" coords="661,56,831,83"/>
+<area shape="rect" id="node6" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="887,31,996,57"/>
+</map>

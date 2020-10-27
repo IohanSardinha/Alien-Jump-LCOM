@@ -1,0 +1,19 @@
+<map id="vg_draw_hline" name="vg_draw_hline">
+<area shape="rect" id="node2" href="$group__graphics.html#ga99d2da2559e11200c6b40c469e9977ec" title="Draws a rectangle of given color with given size in given position. " alt="" coords="159,188,289,215"/>
+<area shape="rect" id="node3" href="$group__Game.html#gad1af7212c4703893c625ad5a5e9107e0" title="Called once per frame in game screen, manages moviment, colision, actions. " alt="" coords="826,62,921,88"/>
+<area shape="rect" id="node5" href="$group__Game-Over-Menu.html#ga8105461ec4f2f3dc83bf6b821b353144" title="Called once per frama, draws the menu and mouse cursor. " alt="" coords="561,11,726,38"/>
+<area shape="rect" id="node6" href="$group__graphics.html#ga97ef658560a953fdb5a8ac8310b31516" title="Fill the screen in black. " alt="" coords="381,214,465,240"/>
+<area shape="rect" id="node14" href="$group__graphics.html#ga3a318192b1144825603071c57fdc4b8e" title="Clean the number drawn in the x,y position. " alt="" coords="373,62,473,88"/>
+<area shape="rect" id="node15" href="$group__graphics.html#ga51ea06097c3bf68f7963901b0296bde6" title="Clear the text drawn in the x,y position. " alt="" coords="384,163,463,190"/>
+<area shape="rect" id="node16" href="$group__Main-Menu.html#gab084ce5f50d30f5b66396d4afa61f3a0" title="Called once per frame on main menu. " alt="" coords="579,398,708,424"/>
+<area shape="rect" id="node17" href="$scoreboardmenu_8h.html#ab9d590d80ea2e5f467aba3709da3a6c6" title="Called once per frame. " alt="" coords="337,455,509,482"/>
+<area shape="rect" id="node18" href="$group__utils.html#gabe39d5da16482ce154af88c3f78a1000" title="Draw a text in screen from the user input. " alt="" coords="557,331,729,358"/>
+<area shape="rect" id="node4" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="1017,239,1127,266"/>
+<area shape="rect" id="node7" href="$group__utils.html#gad4300b6e93d7638f0ca14875cf7476cf" title="Changes the state of the game. " alt="" coords="574,214,713,240"/>
+<area shape="rect" id="node8" href="$group__Game-Over-Menu.html#ga8a878da05a37cf4c3e82b28282dc5c47" title="Called once per mouse interupt, manages exit and name insertion. " alt="" coords="781,366,966,392"/>
+<area shape="rect" id="node9" href="$group__Game-Over-Menu.html#gae4cc6accba6062a3b5855bfc3826b215" title="Called once per mouse interupt, manages mouse cursor and click. " alt="" coords="788,112,959,139"/>
+<area shape="rect" id="node10" href="$group__Main-Menu.html#gaa455d5f53d6465e1e8c467bbc1231f47" title="Called once per keyboard interupt, manages exit. " alt="" coords="799,163,948,190"/>
+<area shape="rect" id="node11" href="$group__Main-Menu.html#ga4a8e0e77f8775d3742bbda1b8c48fd3c" title="Called once per mouse interupt, manages mouse position and click. " alt="" coords="806,214,941,240"/>
+<area shape="rect" id="node12" href="$scoreboardmenu_8h.html#abee64ac95fec9f526a37a197fa1e8b18" title="Called once per keyboard interupt, manages exit. " alt="" coords="777,264,969,291"/>
+<area shape="rect" id="node13" href="$scoreboardmenu_8h.html#aef362f3ae7308b6f06ef2a3d01a3f666" title="Called once per mouse interupt, manages position and click. " alt="" coords="784,315,963,342"/>
+</map>

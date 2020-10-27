@@ -1,0 +1,4 @@
+<map id="game_keyboard" name="game_keyboard">
+<area shape="rect" id="node2" href="$group__graphics.html#gaf7d28831f1ffad3816101e473a54b9be" title="Draw a sprite in position (x,y), from XPM. " alt="" coords="168,5,289,32"/>
+<area shape="rect" id="node3" href="$group__graphics.html#ga08c498ffeb0a3962e3b7711b57397741" title="Turns the given x,y position pixel to the given color. " alt="" coords="337,5,443,32"/>
+</map>

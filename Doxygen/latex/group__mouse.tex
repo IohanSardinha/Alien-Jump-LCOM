@@ -1,0 +1,218 @@
+\hypertarget{group__mouse}{}\section{mouse}
+\label{group__mouse}\index{mouse@{mouse}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{group__mouse_gaf55e4d1ccae1ac1f59dfa4222fd5de8e}{mouse\+\_\+subscribe\+\_\+int} (int $\ast$irq\+\_\+set)
+\item 
+int() \hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int} ()
+\item 
+int() \hyperlink{group__mouse_ga8931196769eb020bd34b8b93ee8c1ef6}{set\+Mouse\+I\+RQ} (bool enable)
+\item 
+int() \hyperlink{group__mouse_ga090c9bebd05709adc5de77ab5b26d7c3}{mouse\+\_\+write\+\_\+command} (uint8\+\_\+t cmd)
+\item 
+void() \hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih} ()
+\item 
+void() \hyperlink{group__mouse_ga3f43ee9f00f28eb503b80a8589216e5f}{mouse\+\_\+read\+\_\+out\+\_\+buff} ()
+\item 
+void() \hyperlink{group__mouse_ga025476b3734400554e7ead9c841b9ed9}{state\+\_\+machine} (struct packet $\ast$pckt, uint8\+\_\+t x\+\_\+len, uint8\+\_\+t tolerance)
+\item 
+int() \hyperlink{group__mouse_gabd35692be21807c9d3f1ae016fe7d6ec}{create\+Mouse\+Packet} (struct packet $\ast$pckt, uint8\+\_\+t data3byte\mbox{[}$\,$\mbox{]})
+\item 
+int() \hyperlink{group__mouse_gae5083fea5f4e764204c98e646ac25cc6}{set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__mouse_ga37cad7cad93664f8a1ed1b0258fe958b}{mouse\+\_\+hook\+\_\+id} = 2
+\item 
+uint8\+\_\+t \hyperlink{group__mouse_ga325819a8e492ac69542e8b31705af6e9}{data}
+\begin{DoxyCompactList}\small\item\em Break code. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__mouse_ga9f33ecfca24a9211fc0fe7d4633087be}{data3bytes} \mbox{[}3\mbox{]}
+\item 
+int \hyperlink{group__mouse_ga33c33c30bb98b3e86f856cc0f031d1f2}{delta\+\_\+x} = 0
+\item 
+int \hyperlink{group__mouse_ga293bf93983300c292a4aaa40d7104917}{delta\+\_\+y} = 0
+\item 
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t} \hyperlink{group__mouse_ga9a379079ab305d43e4c73334578f9325}{st} = \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}{I\+N\+IT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contais tha code to controll the mouse controller 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__mouse_gabd35692be21807c9d3f1ae016fe7d6ec}\label{group__mouse_gabd35692be21807c9d3f1ae016fe7d6ec}} 
+\index{mouse@{mouse}!create\+Mouse\+Packet@{create\+Mouse\+Packet}}
+\index{create\+Mouse\+Packet@{create\+Mouse\+Packet}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{create\+Mouse\+Packet()}{createMousePacket()}}
+{\footnotesize\ttfamily int() create\+Mouse\+Packet (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{data3byte\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group__mouse_gabd35692be21807c9d3f1ae016fe7d6ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga210374b50462acdedab00df64d5cea3c}\label{group__mouse_ga210374b50462acdedab00df64d5cea3c}} 
+\index{mouse@{mouse}!mouse\+\_\+ih@{mouse\+\_\+ih}}
+\index{mouse\+\_\+ih@{mouse\+\_\+ih}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga210374b50462acdedab00df64d5cea3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{group__mouse_ga210374b50462acdedab00df64d5cea3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga3f43ee9f00f28eb503b80a8589216e5f}\label{group__mouse_ga3f43ee9f00f28eb503b80a8589216e5f}} 
+\index{mouse@{mouse}!mouse\+\_\+read\+\_\+out\+\_\+buff@{mouse\+\_\+read\+\_\+out\+\_\+buff}}
+\index{mouse\+\_\+read\+\_\+out\+\_\+buff@{mouse\+\_\+read\+\_\+out\+\_\+buff}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+read\+\_\+out\+\_\+buff()}{mouse\_read\_out\_buff()}}
+{\footnotesize\ttfamily void() mouse\+\_\+read\+\_\+out\+\_\+buff (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group__mouse_ga3f43ee9f00f28eb503b80a8589216e5f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga3f43ee9f00f28eb503b80a8589216e5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_gaf55e4d1ccae1ac1f59dfa4222fd5de8e}\label{group__mouse_gaf55e4d1ccae1ac1f59dfa4222fd5de8e}} 
+\index{mouse@{mouse}!mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}}
+\index{mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+subscribe\+\_\+int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{int $\ast$}]{irq\+\_\+set }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{group__mouse_gaf55e4d1ccae1ac1f59dfa4222fd5de8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}\label{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse@{mouse}!mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}}
+\index{mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+unsubscribe\+\_\+int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga090c9bebd05709adc5de77ab5b26d7c3}\label{group__mouse_ga090c9bebd05709adc5de77ab5b26d7c3}} 
+\index{mouse@{mouse}!mouse\+\_\+write\+\_\+command@{mouse\+\_\+write\+\_\+command}}
+\index{mouse\+\_\+write\+\_\+command@{mouse\+\_\+write\+\_\+command}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+write\+\_\+command()}{mouse\_write\_command()}}
+{\footnotesize\ttfamily int() mouse\+\_\+write\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{group__mouse_ga090c9bebd05709adc5de77ab5b26d7c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{group__mouse_ga090c9bebd05709adc5de77ab5b26d7c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_gae5083fea5f4e764204c98e646ac25cc6}\label{group__mouse_gae5083fea5f4e764204c98e646ac25cc6}} 
+\index{mouse@{mouse}!set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt@{set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt}}
+\index{set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt@{set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt()}{set\_kbc\_cmd\_byte\_dflt()}}
+{\footnotesize\ttfamily int() set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group__mouse_gae5083fea5f4e764204c98e646ac25cc6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga8931196769eb020bd34b8b93ee8c1ef6}\label{group__mouse_ga8931196769eb020bd34b8b93ee8c1ef6}} 
+\index{mouse@{mouse}!set\+Mouse\+I\+RQ@{set\+Mouse\+I\+RQ}}
+\index{set\+Mouse\+I\+RQ@{set\+Mouse\+I\+RQ}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{set\+Mouse\+I\+R\+Q()}{setMouseIRQ()}}
+{\footnotesize\ttfamily int() set\+Mouse\+I\+RQ (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{group__mouse_ga8931196769eb020bd34b8b93ee8c1ef6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga025476b3734400554e7ead9c841b9ed9}\label{group__mouse_ga025476b3734400554e7ead9c841b9ed9}} 
+\index{mouse@{mouse}!state\+\_\+machine@{state\+\_\+machine}}
+\index{state\+\_\+machine@{state\+\_\+machine}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{state\+\_\+machine()}{state\_machine()}}
+{\footnotesize\ttfamily void() state\+\_\+machine (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pckt,  }\item[{uint8\+\_\+t}]{x\+\_\+len,  }\item[{uint8\+\_\+t}]{tolerance }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__mouse_ga325819a8e492ac69542e8b31705af6e9}\label{group__mouse_ga325819a8e492ac69542e8b31705af6e9}} 
+\index{mouse@{mouse}!data@{data}}
+\index{data@{data}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+
+
+Break code. 
+
+\mbox{\Hypertarget{group__mouse_ga9f33ecfca24a9211fc0fe7d4633087be}\label{group__mouse_ga9f33ecfca24a9211fc0fe7d4633087be}} 
+\index{mouse@{mouse}!data3bytes@{data3bytes}}
+\index{data3bytes@{data3bytes}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{data3bytes}{data3bytes}}
+{\footnotesize\ttfamily uint8\+\_\+t data3bytes\mbox{[}3\mbox{]}}
+
+\mbox{\Hypertarget{group__mouse_ga33c33c30bb98b3e86f856cc0f031d1f2}\label{group__mouse_ga33c33c30bb98b3e86f856cc0f031d1f2}} 
+\index{mouse@{mouse}!delta\+\_\+x@{delta\+\_\+x}}
+\index{delta\+\_\+x@{delta\+\_\+x}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{delta\+\_\+x}{delta\_x}}
+{\footnotesize\ttfamily int delta\+\_\+x = 0}
+
+\mbox{\Hypertarget{group__mouse_ga293bf93983300c292a4aaa40d7104917}\label{group__mouse_ga293bf93983300c292a4aaa40d7104917}} 
+\index{mouse@{mouse}!delta\+\_\+y@{delta\+\_\+y}}
+\index{delta\+\_\+y@{delta\+\_\+y}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{delta\+\_\+y}{delta\_y}}
+{\footnotesize\ttfamily int delta\+\_\+y = 0}
+
+\mbox{\Hypertarget{group__mouse_ga37cad7cad93664f8a1ed1b0258fe958b}\label{group__mouse_ga37cad7cad93664f8a1ed1b0258fe958b}} 
+\index{mouse@{mouse}!mouse\+\_\+hook\+\_\+id@{mouse\+\_\+hook\+\_\+id}}
+\index{mouse\+\_\+hook\+\_\+id@{mouse\+\_\+hook\+\_\+id}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+hook\+\_\+id}{mouse\_hook\_id}}
+{\footnotesize\ttfamily int mouse\+\_\+hook\+\_\+id = 2}
+
+\mbox{\Hypertarget{group__mouse_ga9a379079ab305d43e4c73334578f9325}\label{group__mouse_ga9a379079ab305d43e4c73334578f9325}} 
+\index{mouse@{mouse}!st@{st}}
+\index{st@{st}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{st}{st}}
+{\footnotesize\ttfamily \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t} st = \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}{I\+N\+IT}}
+

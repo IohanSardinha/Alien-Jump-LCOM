@@ -1,0 +1,9 @@
+<map id="get_formated_date" name="get_formated_date">
+<area shape="rect" id="node2" href="$RTC_8c.html#ac9918254a972e2a746dd1bf14e48609f" title="rtc_clear_reg_C" alt="" coords="184,5,299,32"/>
+<area shape="rect" id="node4" href="$RTC_8c.html#a78cb956f5d76251e3bbd6f2ad6130852" title="rtc_get_date" alt="" coords="194,56,289,83"/>
+<area shape="rect" id="node6" href="$RTC_8c.html#a7ce679b6dd6ca841ed65ee59f8d8ac8d" title="get_day_week" alt="" coords="188,107,295,133"/>
+<area shape="rect" id="node7" href="$RTC_8c.html#a642ed8129cab4857638164cdb1b3ba16" title="get_month" alt="" coords="200,157,283,184"/>
+<area shape="rect" id="node8" href="$RTC_8c.html#a0c4c5f7bca911b9e8c397373c26a8c6b" title="get_year" alt="" coords="205,208,277,235"/>
+<area shape="rect" id="node3" href="$RTC_8c.html#ab4f60c09f2a3ceb58357c0a74957f5aa" title="rtc_write" alt="" coords="347,5,419,32"/>
+<area shape="rect" id="node5" href="$RTC_8c.html#a1766daa3dfa5886aa42b1eaf279daaaf" title="rtc_read" alt="" coords="348,56,417,83"/>
+</map>

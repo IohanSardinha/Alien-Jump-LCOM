@@ -1,0 +1,37 @@
+\hypertarget{game_8h}{}\section{game.\+h File Reference}
+\label{game_8h}\index{game.\+h@{game.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for game.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Game_ga5f5ccbe5abfdef24c8378dc3cf32ffb3}{game\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Initializes game variables. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gad1af7212c4703893c625ad5a5e9107e0}{game\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Called once per frame in game screen, manages moviment, colision, actions. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga096eca75e6305cefa8171bda34e5ae42}{game\+\_\+mouse} (struct packet pckt)
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, adds player position to mouse delta. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gad082b8fe4e94ee090f0c6c9d11b4d565}{game\+\_\+exit} ()
+\begin{DoxyCompactList}\small\item\em Dealocates memory allocated for platform vector. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga51812b928d0d9e7b80bc06c044e7f5ce}{game\+\_\+keyboard} (uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data})
+\begin{DoxyCompactList}\small\item\em Called once per keyboard interupt, manages pause and exit. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga3f24f1f331ba8708f4661eec7872b914}{add\+Score} ()
+\begin{DoxyCompactList}\small\item\em Adds the score of the player, twice per second. \end{DoxyCompactList}\end{DoxyCompactItemize}

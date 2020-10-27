@@ -1,0 +1,428 @@
+\hypertarget{group__graphics}{}\section{graphics}
+\label{group__graphics}\index{graphics@{graphics}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \hyperlink{group__graphics_gae70314d2e6e41dae20ce327a13929401}{draw\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Draw video buffer into video memory. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga427099c53976d605666e7e2b39238bb9}{free\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Dealocates video buffer. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_gac34ed31db6d6ef68b7167a0c024cac2b}{vg\+\_\+enter} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Enters video mode in the given mode. \end{DoxyCompactList}\item 
+void $\ast$() \hyperlink{group__graphics_gaa6c1ff5024cd4d15e476bce487584daa}{vg\+\_\+init} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes video grafics variables. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga08c498ffeb0a3962e3b7711b57397741}{vg\+\_\+draw\+\_\+pixel} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Turns the given x,y position pixel to the given color. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga1677f4b59f9e0584d82e0b655e4b7fc9}{vg\+\_\+draw\+\_\+hline} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw horizontal line in given x,y position with given width and color. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle of given color with given size in given position. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_gaf7d28831f1ffad3816101e473a54b9be}{draw\+\_\+sprite\+\_\+xpm} (xpm\+\_\+map\+\_\+t xpm, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Draw a sprite in position (x,y), from X\+PM. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga7f31f56ddc44fb5e02130bbe4a6c3927}{draw\+\_\+sprite} (xpm\+\_\+image\+\_\+t sprite, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Draw a sprite in position (x,y), from sprite. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga08b3cc962ee64800e139310f91a3d4b4}{draw\+\_\+object} (\hyperlink{structObject}{Object} object)
+\begin{DoxyCompactList}\small\item\em Draw a sprite in position (x,y), from struct object. \end{DoxyCompactList}\item 
+int() \hyperlink{group__graphics_ga97ef658560a953fdb5a8ac8310b31516}{fill\+\_\+bckgnd} ()
+\begin{DoxyCompactList}\small\item\em Fill the screen in black. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_gad93c2188e33c696ab1697dc05b320131}{load\+\_\+numbers} ()
+\begin{DoxyCompactList}\small\item\em Load the number xpm into an array for better performance. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga7b24da519204bf650a1e98c993093e94}{draw\+\_\+number} (int n, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a number into x,y position. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga3a318192b1144825603071c57fdc4b8e}{clear\+\_\+number} (int n, int x, int y)
+\begin{DoxyCompactList}\small\item\em Clean the number drawn in the x,y position. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga51ea06097c3bf68f7963901b0296bde6}{clear\+\_\+text} (char $\ast$\hyperlink{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}{str}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Clear the text drawn in the x,y position. \end{DoxyCompactList}\item 
+void() \hyperlink{group__graphics_ga37cbb1079da920cd529418d4a9f83ff2}{draw\+\_\+text} (char $\ast$\hyperlink{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}{str}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a text in the given position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__graphics_ga505fdb0bbcbe5f0d3a5c4a3d1190401a}{vd\+\_\+mode}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__graphics_ga5aa03a801f01a5140c299908a06c47cd}{numbers\+\_\+sprites} \mbox{[}10\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array with sprites of the numbers from 0 to 9. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contais tha code to control the video graphics 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__graphics_ga3a318192b1144825603071c57fdc4b8e}\label{group__graphics_ga3a318192b1144825603071c57fdc4b8e}} 
+\index{graphics@{graphics}!clear\+\_\+number@{clear\+\_\+number}}
+\index{clear\+\_\+number@{clear\+\_\+number}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{clear\+\_\+number()}{clear\_number()}}
+{\footnotesize\ttfamily void() clear\+\_\+number (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Clean the number drawn in the x,y position. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga3a318192b1144825603071c57fdc4b8e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga3a318192b1144825603071c57fdc4b8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga51ea06097c3bf68f7963901b0296bde6}\label{group__graphics_ga51ea06097c3bf68f7963901b0296bde6}} 
+\index{graphics@{graphics}!clear\+\_\+text@{clear\+\_\+text}}
+\index{clear\+\_\+text@{clear\+\_\+text}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{clear\+\_\+text()}{clear\_text()}}
+{\footnotesize\ttfamily void() clear\+\_\+text (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Clear the text drawn in the x,y position. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga51ea06097c3bf68f7963901b0296bde6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga51ea06097c3bf68f7963901b0296bde6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_gae70314d2e6e41dae20ce327a13929401}\label{group__graphics_gae70314d2e6e41dae20ce327a13929401}} 
+\index{graphics@{graphics}!draw\+\_\+frame@{draw\+\_\+frame}}
+\index{draw\+\_\+frame@{draw\+\_\+frame}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{draw\+\_\+frame()}{draw\_frame()}}
+{\footnotesize\ttfamily void() draw\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw video buffer into video memory. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_gae70314d2e6e41dae20ce327a13929401_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga7b24da519204bf650a1e98c993093e94}\label{group__graphics_ga7b24da519204bf650a1e98c993093e94}} 
+\index{graphics@{graphics}!draw\+\_\+number@{draw\+\_\+number}}
+\index{draw\+\_\+number@{draw\+\_\+number}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{draw\+\_\+number()}{draw\_number()}}
+{\footnotesize\ttfamily void() draw\+\_\+number (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw a number into x,y position. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga7b24da519204bf650a1e98c993093e94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga7b24da519204bf650a1e98c993093e94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga08b3cc962ee64800e139310f91a3d4b4}\label{group__graphics_ga08b3cc962ee64800e139310f91a3d4b4}} 
+\index{graphics@{graphics}!draw\+\_\+object@{draw\+\_\+object}}
+\index{draw\+\_\+object@{draw\+\_\+object}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{draw\+\_\+object()}{draw\_object()}}
+{\footnotesize\ttfamily int() draw\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{structObject}{Object}}]{object }\end{DoxyParamCaption})}
+
+
+
+Draw a sprite in position (x,y), from struct object. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga08b3cc962ee64800e139310f91a3d4b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga08b3cc962ee64800e139310f91a3d4b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga7f31f56ddc44fb5e02130bbe4a6c3927}\label{group__graphics_ga7f31f56ddc44fb5e02130bbe4a6c3927}} 
+\index{graphics@{graphics}!draw\+\_\+sprite@{draw\+\_\+sprite}}
+\index{draw\+\_\+sprite@{draw\+\_\+sprite}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{draw\+\_\+sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily int() draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{sprite,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw a sprite in position (x,y), from sprite. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{group__graphics_ga7f31f56ddc44fb5e02130bbe4a6c3927_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga7f31f56ddc44fb5e02130bbe4a6c3927_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_gaf7d28831f1ffad3816101e473a54b9be}\label{group__graphics_gaf7d28831f1ffad3816101e473a54b9be}} 
+\index{graphics@{graphics}!draw\+\_\+sprite\+\_\+xpm@{draw\+\_\+sprite\+\_\+xpm}}
+\index{draw\+\_\+sprite\+\_\+xpm@{draw\+\_\+sprite\+\_\+xpm}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{draw\+\_\+sprite\+\_\+xpm()}{draw\_sprite\_xpm()}}
+{\footnotesize\ttfamily int() draw\+\_\+sprite\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw a sprite in position (x,y), from X\+PM. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{group__graphics_gaf7d28831f1ffad3816101e473a54b9be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_gaf7d28831f1ffad3816101e473a54b9be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga37cbb1079da920cd529418d4a9f83ff2}\label{group__graphics_ga37cbb1079da920cd529418d4a9f83ff2}} 
+\index{graphics@{graphics}!draw\+\_\+text@{draw\+\_\+text}}
+\index{draw\+\_\+text@{draw\+\_\+text}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{draw\+\_\+text()}{draw\_text()}}
+{\footnotesize\ttfamily void() draw\+\_\+text (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw a text in the given position. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga37cbb1079da920cd529418d4a9f83ff2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga37cbb1079da920cd529418d4a9f83ff2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga97ef658560a953fdb5a8ac8310b31516}\label{group__graphics_ga97ef658560a953fdb5a8ac8310b31516}} 
+\index{graphics@{graphics}!fill\+\_\+bckgnd@{fill\+\_\+bckgnd}}
+\index{fill\+\_\+bckgnd@{fill\+\_\+bckgnd}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{fill\+\_\+bckgnd()}{fill\_bckgnd()}}
+{\footnotesize\ttfamily int() fill\+\_\+bckgnd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fill the screen in black. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga97ef658560a953fdb5a8ac8310b31516_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga97ef658560a953fdb5a8ac8310b31516_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga427099c53976d605666e7e2b39238bb9}\label{group__graphics_ga427099c53976d605666e7e2b39238bb9}} 
+\index{graphics@{graphics}!free\+\_\+buffer@{free\+\_\+buffer}}
+\index{free\+\_\+buffer@{free\+\_\+buffer}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{free\+\_\+buffer()}{free\_buffer()}}
+{\footnotesize\ttfamily void() free\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dealocates video buffer. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{group__graphics_ga427099c53976d605666e7e2b39238bb9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_gad93c2188e33c696ab1697dc05b320131}\label{group__graphics_gad93c2188e33c696ab1697dc05b320131}} 
+\index{graphics@{graphics}!load\+\_\+numbers@{load\+\_\+numbers}}
+\index{load\+\_\+numbers@{load\+\_\+numbers}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{load\+\_\+numbers()}{load\_numbers()}}
+{\footnotesize\ttfamily void() load\+\_\+numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Load the number xpm into an array for better performance. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{group__graphics_gad93c2188e33c696ab1697dc05b320131_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_gad93c2188e33c696ab1697dc05b320131_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga1677f4b59f9e0584d82e0b655e4b7fc9}\label{group__graphics_ga1677f4b59f9e0584d82e0b655e4b7fc9}} 
+\index{graphics@{graphics}!vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}}
+\index{vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw horizontal line in given x,y position with given width and color. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{group__graphics_ga1677f4b59f9e0584d82e0b655e4b7fc9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga1677f4b59f9e0584d82e0b655e4b7fc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga08c498ffeb0a3962e3b7711b57397741}\label{group__graphics_ga08c498ffeb0a3962e3b7711b57397741}} 
+\index{graphics@{graphics}!vg\+\_\+draw\+\_\+pixel@{vg\+\_\+draw\+\_\+pixel}}
+\index{vg\+\_\+draw\+\_\+pixel@{vg\+\_\+draw\+\_\+pixel}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Turns the given x,y position pixel to the given color. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga08c498ffeb0a3962e3b7711b57397741_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_ga99d2da2559e11200c6b40c469e9977ec}\label{group__graphics_ga99d2da2559e11200c6b40c469e9977ec}} 
+\index{graphics@{graphics}!vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}}
+\index{vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle of given color with given size in given position. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__graphics_ga99d2da2559e11200c6b40c469e9977ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__graphics_gac34ed31db6d6ef68b7167a0c024cac2b}\label{group__graphics_gac34ed31db6d6ef68b7167a0c024cac2b}} 
+\index{graphics@{graphics}!vg\+\_\+enter@{vg\+\_\+enter}}
+\index{vg\+\_\+enter@{vg\+\_\+enter}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{vg\+\_\+enter()}{vg\_enter()}}
+{\footnotesize\ttfamily int() vg\+\_\+enter (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Enters video mode in the given mode. 
+
+\mbox{\Hypertarget{group__graphics_gaa6c1ff5024cd4d15e476bce487584daa}\label{group__graphics_gaa6c1ff5024cd4d15e476bce487584daa}} 
+\index{graphics@{graphics}!vg\+\_\+init@{vg\+\_\+init}}
+\index{vg\+\_\+init@{vg\+\_\+init}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{vg\+\_\+init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes video grafics variables. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{group__graphics_gaa6c1ff5024cd4d15e476bce487584daa_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__graphics_ga5aa03a801f01a5140c299908a06c47cd}\label{group__graphics_ga5aa03a801f01a5140c299908a06c47cd}} 
+\index{graphics@{graphics}!numbers\+\_\+sprites@{numbers\+\_\+sprites}}
+\index{numbers\+\_\+sprites@{numbers\+\_\+sprites}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{numbers\+\_\+sprites}{numbers\_sprites}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t numbers\+\_\+sprites\mbox{[}10\mbox{]}}
+
+
+
+Array with sprites of the numbers from 0 to 9. 
+
+\mbox{\Hypertarget{group__graphics_ga505fdb0bbcbe5f0d3a5c4a3d1190401a}\label{group__graphics_ga505fdb0bbcbe5f0d3a5c4a3d1190401a}} 
+\index{graphics@{graphics}!vd\+\_\+mode@{vd\+\_\+mode}}
+\index{vd\+\_\+mode@{vd\+\_\+mode}!graphics@{graphics}}
+\subsubsection{\texorpdfstring{vd\+\_\+mode}{vd\_mode}}
+{\footnotesize\ttfamily uint16\+\_\+t vd\+\_\+mode}
+

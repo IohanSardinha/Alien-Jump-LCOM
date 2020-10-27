@@ -1,0 +1,4 @@
+<map id="load_scores" name="load_scores">
+<area shape="rect" id="node2" href="$group__Game-Over-Menu.html#ga8105461ec4f2f3dc83bf6b821b353144" title="Called once per frama, draws the menu and mouse cursor. " alt="" coords="145,5,311,32"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="359,31,468,57"/>
+</map>

@@ -1,0 +1,224 @@
+\hypertarget{group__keyboard}{}\section{keyboard}
+\label{group__keyboard}\index{keyboard@{keyboard}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{group__keyboard_gaefd0e3aafc75eb71df4d778f356b6dd7}{keyboard\+\_\+subscribe\+\_\+int} (int $\ast$irq\+\_\+set)
+\begin{DoxyCompactList}\small\item\em Subscribe for keyboard interupts. \end{DoxyCompactList}\item 
+int() \hyperlink{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}{keyboard\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe from keyboard interupts. \end{DoxyCompactList}\item 
+void() \hyperlink{group__keyboard_gabb14446976ac2fcfaf095866f58d28ce}{keyboard\+\_\+\+IH} ()
+\begin{DoxyCompactList}\small\item\em Keyboard interupt handler. \end{DoxyCompactList}\item 
+int() \hyperlink{group__keyboard_ga01f4a2303581946d7d26fdb5ac7c0caf}{keyboard\+\_\+read\+\_\+out\+\_\+buff} (uint8\+\_\+t $\ast$output)
+\begin{DoxyCompactList}\small\item\em Reads from the out buffer. \end{DoxyCompactList}\item 
+int() \hyperlink{group__keyboard_ga50ccd1d4a10b2f8d6f380d3581eae423}{print\+\_\+scancode} ()
+\begin{DoxyCompactList}\small\item\em Prints scancode. \end{DoxyCompactList}\item 
+int() \hyperlink{group__keyboard_gad6f191b6116f8df3e057322f0c76b66a}{keyboard\+\_\+write\+\_\+command} (uint8\+\_\+t reg, uint32\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Write comand to register. \end{DoxyCompactList}\item 
+int() \hyperlink{group__keyboard_ga0f2b9c07b7d16125c5fb2e05d9427e76}{keyboard\+\_\+enable\+\_\+interupts} ()
+\begin{DoxyCompactList}\small\item\em Enable keyboard interupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{group__keyboard_ga1fab7e7fd2c88555db9e3dd5c3654ad3}{data2byte} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Keyboard data for the case the scancode is 2 byte long. \end{DoxyCompactList}\item 
+bool \hyperlink{group__keyboard_ga7276dae9c8b623a99137f24b3b6b549e}{is\+\_\+2\+\_\+byte} = false
+\begin{DoxyCompactList}\small\item\em If the code is 2 byte long. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__keyboard_ga325819a8e492ac69542e8b31705af6e9}{data}
+\begin{DoxyCompactList}\small\item\em Break code. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_ga74708534432e98d4ab30ba40e2e5dcc3}{kbd\+\_\+hook\+\_\+id} = 1
+\begin{DoxyCompactList}\small\item\em Keyboard hook id. \end{DoxyCompactList}\item 
+bool \hyperlink{group__keyboard_ga96f7c2f0fe863bd78294a8f639e60478}{new\+\_\+scancode} = false
+\begin{DoxyCompactList}\small\item\em If the scancode recived is new or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contais tha code to control the keyboard controller 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__keyboard_ga0f2b9c07b7d16125c5fb2e05d9427e76}\label{group__keyboard_ga0f2b9c07b7d16125c5fb2e05d9427e76}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+enable\+\_\+interupts@{keyboard\+\_\+enable\+\_\+interupts}}
+\index{keyboard\+\_\+enable\+\_\+interupts@{keyboard\+\_\+enable\+\_\+interupts}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+enable\+\_\+interupts()}{keyboard\_enable\_interupts()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+enable\+\_\+interupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enable keyboard interupts. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_ga0f2b9c07b7d16125c5fb2e05d9427e76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gabb14446976ac2fcfaf095866f58d28ce}\label{group__keyboard_gabb14446976ac2fcfaf095866f58d28ce}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+\+IH@{keyboard\+\_\+\+IH}}
+\index{keyboard\+\_\+\+IH@{keyboard\+\_\+\+IH}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+\+I\+H()}{keyboard\_IH()}}
+{\footnotesize\ttfamily void() keyboard\+\_\+\+IH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Keyboard interupt handler. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{group__keyboard_gabb14446976ac2fcfaf095866f58d28ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{group__keyboard_gabb14446976ac2fcfaf095866f58d28ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga01f4a2303581946d7d26fdb5ac7c0caf}\label{group__keyboard_ga01f4a2303581946d7d26fdb5ac7c0caf}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+read\+\_\+out\+\_\+buff@{keyboard\+\_\+read\+\_\+out\+\_\+buff}}
+\index{keyboard\+\_\+read\+\_\+out\+\_\+buff@{keyboard\+\_\+read\+\_\+out\+\_\+buff}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+read\+\_\+out\+\_\+buff()}{keyboard\_read\_out\_buff()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+read\+\_\+out\+\_\+buff (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Reads from the out buffer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{group__keyboard_ga01f4a2303581946d7d26fdb5ac7c0caf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_ga01f4a2303581946d7d26fdb5ac7c0caf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gaefd0e3aafc75eb71df4d778f356b6dd7}\label{group__keyboard_gaefd0e3aafc75eb71df4d778f356b6dd7}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+subscribe\+\_\+int@{keyboard\+\_\+subscribe\+\_\+int}}
+\index{keyboard\+\_\+subscribe\+\_\+int@{keyboard\+\_\+subscribe\+\_\+int}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+subscribe\+\_\+int()}{keyboard\_subscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{int $\ast$}]{irq\+\_\+set }\end{DoxyParamCaption})}
+
+
+
+Subscribe for keyboard interupts. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{group__keyboard_gaefd0e3aafc75eb71df4d778f356b6dd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}\label{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+unsubscribe\+\_\+int@{keyboard\+\_\+unsubscribe\+\_\+int}}
+\index{keyboard\+\_\+unsubscribe\+\_\+int@{keyboard\+\_\+unsubscribe\+\_\+int}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+unsubscribe\+\_\+int()}{keyboard\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe from keyboard interupts. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gad6f191b6116f8df3e057322f0c76b66a}\label{group__keyboard_gad6f191b6116f8df3e057322f0c76b66a}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+write\+\_\+command@{keyboard\+\_\+write\+\_\+command}}
+\index{keyboard\+\_\+write\+\_\+command@{keyboard\+\_\+write\+\_\+command}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+write\+\_\+command()}{keyboard\_write\_command()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+write\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg,  }\item[{uint32\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Write comand to register. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{group__keyboard_gad6f191b6116f8df3e057322f0c76b66a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_gad6f191b6116f8df3e057322f0c76b66a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga50ccd1d4a10b2f8d6f380d3581eae423}\label{group__keyboard_ga50ccd1d4a10b2f8d6f380d3581eae423}} 
+\index{keyboard@{keyboard}!print\+\_\+scancode@{print\+\_\+scancode}}
+\index{print\+\_\+scancode@{print\+\_\+scancode}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{print\+\_\+scancode()}{print\_scancode()}}
+{\footnotesize\ttfamily int() print\+\_\+scancode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints scancode. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__keyboard_ga325819a8e492ac69542e8b31705af6e9}\label{group__keyboard_ga325819a8e492ac69542e8b31705af6e9}} 
+\index{keyboard@{keyboard}!data@{data}}
+\index{data@{data}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+
+
+Break code. 
+
+\mbox{\Hypertarget{group__keyboard_ga1fab7e7fd2c88555db9e3dd5c3654ad3}\label{group__keyboard_ga1fab7e7fd2c88555db9e3dd5c3654ad3}} 
+\index{keyboard@{keyboard}!data2byte@{data2byte}}
+\index{data2byte@{data2byte}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{data2byte}{data2byte}}
+{\footnotesize\ttfamily uint8\+\_\+t data2byte\mbox{[}2\mbox{]}}
+
+
+
+Keyboard data for the case the scancode is 2 byte long. 
+
+\mbox{\Hypertarget{group__keyboard_ga7276dae9c8b623a99137f24b3b6b549e}\label{group__keyboard_ga7276dae9c8b623a99137f24b3b6b549e}} 
+\index{keyboard@{keyboard}!is\+\_\+2\+\_\+byte@{is\+\_\+2\+\_\+byte}}
+\index{is\+\_\+2\+\_\+byte@{is\+\_\+2\+\_\+byte}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{is\+\_\+2\+\_\+byte}{is\_2\_byte}}
+{\footnotesize\ttfamily bool is\+\_\+2\+\_\+byte = false}
+
+
+
+If the code is 2 byte long. 
+
+\mbox{\Hypertarget{group__keyboard_ga74708534432e98d4ab30ba40e2e5dcc3}\label{group__keyboard_ga74708534432e98d4ab30ba40e2e5dcc3}} 
+\index{keyboard@{keyboard}!kbd\+\_\+hook\+\_\+id@{kbd\+\_\+hook\+\_\+id}}
+\index{kbd\+\_\+hook\+\_\+id@{kbd\+\_\+hook\+\_\+id}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{kbd\+\_\+hook\+\_\+id}{kbd\_hook\_id}}
+{\footnotesize\ttfamily int kbd\+\_\+hook\+\_\+id = 1}
+
+
+
+Keyboard hook id. 
+
+\mbox{\Hypertarget{group__keyboard_ga96f7c2f0fe863bd78294a8f639e60478}\label{group__keyboard_ga96f7c2f0fe863bd78294a8f639e60478}} 
+\index{keyboard@{keyboard}!new\+\_\+scancode@{new\+\_\+scancode}}
+\index{new\+\_\+scancode@{new\+\_\+scancode}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{new\+\_\+scancode}{new\_scancode}}
+{\footnotesize\ttfamily bool new\+\_\+scancode = false}
+
+
+
+If the scancode recived is new or not. 
+

@@ -1,0 +1,6 @@
+<map id="game_init" name="game_init">
+<area shape="rect" id="node2" href="$group__Game-Over-Menu.html#gae4cc6accba6062a3b5855bfc3826b215" title="Called once per mouse interupt, manages mouse cursor and click. " alt="" coords="136,5,307,32"/>
+<area shape="rect" id="node4" href="$group__Main-Menu.html#ga4a8e0e77f8775d3742bbda1b8c48fd3c" title="Called once per mouse interupt, manages mouse position and click. " alt="" coords="154,56,289,83"/>
+<area shape="rect" id="node5" href="$scoreboardmenu_8h.html#aef362f3ae7308b6f06ef2a3d01a3f666" title="Called once per mouse interupt, manages position and click. " alt="" coords="132,107,311,133"/>
+<area shape="rect" id="node3" href="$group__Proj.html#ga33bde23e0d2bbde847401c5ac6fb62e0" title="Project main loop, basicly a state machine for each screen. " alt="" coords="359,56,468,83"/>
+</map>

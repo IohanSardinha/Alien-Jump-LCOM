@@ -1,0 +1,6 @@
+<map id="timer_set_frequency" name="timer_set_frequency">
+<area shape="rect" id="node2" href="$utils_8c.html#a6a880076cd2ec468834438b6e0c58836" title="util_get_MSB" alt="" coords="197,5,297,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a81621440b3d65680979425e39aa8c789" title="util_get_LSB" alt="" coords="199,56,295,83"/>
+<area shape="rect" id="node4" href="$group__timer.html#ga703c60b40c8c49607d6ecb6fef82d27a" title="Reads the input timer configuration (status) via read&#45;back command. " alt="" coords="193,107,301,133"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="349,107,440,133"/>
+</map>

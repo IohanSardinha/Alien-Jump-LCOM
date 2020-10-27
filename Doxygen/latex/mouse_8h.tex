@@ -1,0 +1,73 @@
+\hypertarget{mouse_8h}{}\section{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.\+h@{mouse.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t} \{ \newline
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}{I\+N\+IT}, 
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248ab6a2858648b154fcc397d4f247b8786b}{D\+R\+A\+W\+UP}, 
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a2e4d5495bd9d476f78962cebe074ebbd}{V\+E\+R\+T\+EX}, 
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a32baa7d1ad095c8e2b1534d3ffd9501f}{D\+R\+A\+W\+D\+O\+WN}, 
+\newline
+\hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a7fd9a97abde63f8c83a4756769aa899e}{C\+MP}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih} (void)
+\item 
+int() \hyperlink{group__mouse_gaf55e4d1ccae1ac1f59dfa4222fd5de8e}{mouse\+\_\+subscribe\+\_\+int} (int $\ast$irq\+\_\+set)
+\item 
+int() \hyperlink{group__mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int} ()
+\item 
+int() \hyperlink{group__mouse_ga8931196769eb020bd34b8b93ee8c1ef6}{set\+Mouse\+I\+RQ} (bool enable)
+\item 
+int() \hyperlink{group__mouse_ga090c9bebd05709adc5de77ab5b26d7c3}{mouse\+\_\+write\+\_\+command} (uint8\+\_\+t cmd)
+\item 
+void() \hyperlink{group__mouse_ga3f43ee9f00f28eb503b80a8589216e5f}{mouse\+\_\+read\+\_\+out\+\_\+buff} (void)
+\item 
+int() \hyperlink{group__mouse_gabd35692be21807c9d3f1ae016fe7d6ec}{create\+Mouse\+Packet} (struct packet $\ast$pckt, uint8\+\_\+t data3byte\mbox{[}$\,$\mbox{]})
+\item 
+int() \hyperlink{group__mouse_gae5083fea5f4e764204c98e646ac25cc6}{set\+\_\+kbc\+\_\+cmd\+\_\+byte\+\_\+dflt} ()
+\item 
+void() \hyperlink{group__mouse_ga025476b3734400554e7ead9c841b9ed9}{state\+\_\+machine} (struct packet $\ast$pckt, uint8\+\_\+t x\+\_\+len, uint8\+\_\+t tolerance)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}} 
+\index{mouse.\+h@{mouse.\+h}!state\+\_\+t@{state\+\_\+t}}
+\index{state\+\_\+t@{state\+\_\+t}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{state\+\_\+t}{state\_t}}
+{\footnotesize\ttfamily enum \hyperlink{mouse_8h_aa0aafed44fec19806d8f9ad834be1248}{state\+\_\+t}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+IT@{I\+N\+IT}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!I\+N\+IT@{I\+N\+IT}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a0cb1b2c6a7db1f1084886c98909a3f36}} 
+I\+N\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+R\+A\+W\+UP@{D\+R\+A\+W\+UP}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!D\+R\+A\+W\+UP@{D\+R\+A\+W\+UP}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248ab6a2858648b154fcc397d4f247b8786b}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248ab6a2858648b154fcc397d4f247b8786b}} 
+D\+R\+A\+W\+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+T\+EX@{V\+E\+R\+T\+EX}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!V\+E\+R\+T\+EX@{V\+E\+R\+T\+EX}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a2e4d5495bd9d476f78962cebe074ebbd}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a2e4d5495bd9d476f78962cebe074ebbd}} 
+V\+E\+R\+T\+EX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+R\+A\+W\+D\+O\+WN@{D\+R\+A\+W\+D\+O\+WN}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!D\+R\+A\+W\+D\+O\+WN@{D\+R\+A\+W\+D\+O\+WN}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a32baa7d1ad095c8e2b1534d3ffd9501f}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a32baa7d1ad095c8e2b1534d3ffd9501f}} 
+D\+R\+A\+W\+D\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+MP@{C\+MP}!mouse.\+h@{mouse.\+h}}\index{mouse.\+h@{mouse.\+h}!C\+MP@{C\+MP}}}\mbox{\Hypertarget{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a7fd9a97abde63f8c83a4756769aa899e}\label{mouse_8h_aa0aafed44fec19806d8f9ad834be1248a7fd9a97abde63f8c83a4756769aa899e}} 
+C\+MP&\\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,61 @@
+\hypertarget{game_8c}{}\section{game.\+c File Reference}
+\label{game_8c}\index{game.\+c@{game.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+Include dependency graph for game.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Game_ga5f5ccbe5abfdef24c8378dc3cf32ffb3}{game\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Initializes game variables. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gad1af7212c4703893c625ad5a5e9107e0}{game\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Called once per frame in game screen, manages moviment, colision, actions. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga3f24f1f331ba8708f4661eec7872b914}{add\+Score} ()
+\begin{DoxyCompactList}\small\item\em Adds the score of the player, twice per second. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga096eca75e6305cefa8171bda34e5ae42}{game\+\_\+mouse} (struct packet pckt)
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, adds player position to mouse delta. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gad082b8fe4e94ee090f0c6c9d11b4d565}{game\+\_\+exit} ()
+\begin{DoxyCompactList}\small\item\em Dealocates memory allocated for platform vector. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga51812b928d0d9e7b80bc06c044e7f5ce}{game\+\_\+keyboard} (uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data})
+\begin{DoxyCompactList}\small\item\em Called once per keyboard interupt, manages pause and exit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{group__Game_ga38caf7c28534bcd60ff95faf7fcae2d7}{game\+\_\+state}
+\begin{DoxyCompactList}\small\item\em Current game state. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Game_ga1656129c4a4fd8809254194f08f0ac70}{paused} = false
+\begin{DoxyCompactList}\small\item\em If the game is paused or not. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game_gafef635ed3c73fc60d8faf6dd610c4298}{ox} = 0
+\begin{DoxyCompactList}\small\item\em Value of the player x in the last frame, to erease the image. \end{DoxyCompactList}\item 
+float \hyperlink{group__Game_gafc29fb7fadd39a1bc2e3c52532248689}{vel}
+\begin{DoxyCompactList}\small\item\em Player y velocity. \end{DoxyCompactList}\item 
+float \hyperlink{group__Game_gab3a9c86761412cb0f30bbd761491e683}{acel} = 1
+\item 
+float \hyperlink{group__Game_ga223eb1bebc2dce2b95cb54c56c82b040}{bounce\+\_\+vel} = -\/20
+\begin{DoxyCompactList}\small\item\em Velocity the player bounces back from a platform. \end{DoxyCompactList}\item 
+float \hyperlink{group__Game_gaae54be6a12a3487f02901b15ab46a37b}{asteroid\+\_\+vel}
+\begin{DoxyCompactList}\small\item\em Platform y velocity. \end{DoxyCompactList}\item 
+float \hyperlink{group__Game_ga5b34aa944fc2c29ad1b5e7ca7fb44449}{asteroid\+\_\+acel} = 0.\+001
+\begin{DoxyCompactList}\small\item\em Platform aceleration. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game_gaef160b7437d94056f1dc59646cd5b87d}{score}
+\begin{DoxyCompactList}\small\item\em Player score. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game_gad7f76af8922cce0f1ae4e8c9ed2346bd}{asteroids\+\_\+size} = 10
+\begin{DoxyCompactList}\small\item\em Number of platforms in screen. \end{DoxyCompactList}\item 
+\hyperlink{structObject}{Object} \hyperlink{group__Game_gab29a895e902e0b5c3ab2064a27af5a2d}{alien}
+\begin{DoxyCompactList}\small\item\em Player object. \end{DoxyCompactList}\item 
+\hyperlink{structObject}{Object} $\ast$ \hyperlink{group__Game_gae4c148b0e7f64e113a8ef493e7707429}{asteroids}
+\begin{DoxyCompactList}\small\item\em Platform vector. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game_ga69acbc91c439d0d9f047cbe70ade84cc}{alien\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Alien player sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game_ga45f80f61d0103ffc208c2d0493380fb2}{asteroid\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Asteroid sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game_ga06a70f098733d826cb9d8e81e7104983}{broken\+\_\+asteroid\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Broken asteroid sprite. \end{DoxyCompactList}\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__Game_ga5a4cfb92e48a82e5d50c87e4bc632970}{background\+\_\+sprite}
+\begin{DoxyCompactList}\small\item\em Background sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}

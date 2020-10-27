@@ -1,0 +1,33 @@
+\hypertarget{mainmenu_8h}{}\section{mainmenu.\+h File Reference}
+\label{mainmenu_8h}\index{mainmenu.\+h@{mainmenu.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+Include dependency graph for mainmenu.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainmenu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{mainmenu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Main-Menu_gab084ce5f50d30f5b66396d4afa61f3a0}{main\+\_\+menu\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Called once per frame on main menu. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_gaa455d5f53d6465e1e8c467bbc1231f47}{main\+\_\+menu\+\_\+keyboard} (uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data})
+\begin{DoxyCompactList}\small\item\em Called once per keyboard interupt, manages exit. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_ga4a8e0e77f8775d3742bbda1b8c48fd3c}{main\+\_\+menu\+\_\+mouse} (struct packet pckt)
+\begin{DoxyCompactList}\small\item\em Called once per mouse interupt, manages mouse position and click. \end{DoxyCompactList}\item 
+void \hyperlink{group__Main-Menu_ga26d3dd4d93472051b4e0bb50e319494b}{load\+\_\+sprites} ()
+\begin{DoxyCompactList}\small\item\em Loads the X\+PM into xpm\+\_\+image\+\_\+t for further use. \end{DoxyCompactList}\end{DoxyCompactItemize}

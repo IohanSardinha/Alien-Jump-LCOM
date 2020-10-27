@@ -1,0 +1,139 @@
+\hypertarget{utils_8c}{}\section{utils.\+c File Reference}
+\label{utils_8c}\index{utils.\+c@{utils.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\newline
+Include dependency graph for utils.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{utils_8c_a81621440b3d65680979425e39aa8c789}{util\+\_\+get\+\_\+\+L\+SB} (uint16\+\_\+t val, uint8\+\_\+t $\ast$lsb)
+\item 
+int() \hyperlink{utils_8c_a6a880076cd2ec468834438b6e0c58836}{util\+\_\+get\+\_\+\+M\+SB} (uint16\+\_\+t val, uint8\+\_\+t $\ast$msb)
+\item 
+int() \hyperlink{utils_8c_a79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb} (int port, uint8\+\_\+t $\ast$value)
+\item 
+\hyperlink{structObject}{Object} \hyperlink{group__utils_gad24d82cbacfb1bf3af2491088d770602}{new\+Object} (int x, int y, xpm\+\_\+image\+\_\+t sprite, enum \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag} \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag})
+\begin{DoxyCompactList}\small\item\em Creates a new object. \end{DoxyCompactList}\item 
+bool() \hyperlink{group__utils_gaf433e5aeb6e9df7b15e233a2c4251577}{colides} (\hyperlink{structObject}{Object} o1, \hyperlink{structObject}{Object} o2)
+\begin{DoxyCompactList}\small\item\em Verifies if a o1 colides with o2. \end{DoxyCompactList}\item 
+xpm\+\_\+map\+\_\+t \hyperlink{group__utils_gaf0aa8dc23073c285e1b6b0c3ae16aefb}{get\+Number\+X\+PM} (int n)
+\begin{DoxyCompactList}\small\item\em Get the xpm for a given integer from 0 to 9. \end{DoxyCompactList}\item 
+xpm\+\_\+map\+\_\+t \hyperlink{group__utils_ga8e2a12eed020ad751697c4f2d1a725dc}{get\+Letter\+X\+PM} (char c)
+\begin{DoxyCompactList}\small\item\em Gets the xpm for a given character. \end{DoxyCompactList}\item 
+char \hyperlink{group__utils_ga7891ce0c95b80f1294517ff05b7cb962}{get\+Code\+Char} (uint8\+\_\+t code)
+\begin{DoxyCompactList}\small\item\em Get the char from a scancode. \end{DoxyCompactList}\item 
+void \hyperlink{group__utils_gabe39d5da16482ce154af88c3f78a1000}{draw\+\_\+text\+\_\+from\+\_\+keyboard} (char $\ast$\hyperlink{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}{str}, uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data}, int $\ast$\hyperlink{group__Game-Over-Menu_ga439227feff9d7f55384e8780cfc2eb82}{size}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a text in screen from the user input. \end{DoxyCompactList}\item 
+void \hyperlink{group__utils_gad4300b6e93d7638f0ca14875cf7476cf}{change\+\_\+game\+\_\+state} (enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} $\ast$ost, enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} nst)
+\begin{DoxyCompactList}\small\item\em Changes the state of the game. \end{DoxyCompactList}\item 
+void \hyperlink{utils_8c_a34615d175cd22e5e2cccb4cfce61822d}{swap\+\_\+i} (int $\ast$xp, int $\ast$yp)
+\item 
+void \hyperlink{utils_8c_aaa1b351d3bffbe47c309ec8c8efdf24d}{swap\+\_\+c} (char $\ast$xp, char $\ast$yp)
+\item 
+void \hyperlink{utils_8c_a4e28e315203b18b4525ca09b14fffb98}{sort\+\_\+scores} (char arr2\mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]}\mbox{[}255\mbox{]}, int arr\mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]})
+\item 
+void \hyperlink{group__utils_ga1214184725b2f89d6ae427ecd9041295}{load\+\_\+scores} ()
+\begin{DoxyCompactList}\small\item\em Loads the scoreboard from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Game-Over-Menu_ga10efae42dd260dcc2c52eb07d71da687}{highscores} \mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Top scores array. \end{DoxyCompactList}\item 
+char \hyperlink{group__Game-Over-Menu_ga286661e657548eadd26d0d129c981ea2}{names} \mbox{[}\hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}\mbox{]}\mbox{[}255\mbox{]}
+\begin{DoxyCompactList}\small\item\em Top score player name array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{utils_8c_a4e28e315203b18b4525ca09b14fffb98}\label{utils_8c_a4e28e315203b18b4525ca09b14fffb98}} 
+\index{utils.\+c@{utils.\+c}!sort\+\_\+scores@{sort\+\_\+scores}}
+\index{sort\+\_\+scores@{sort\+\_\+scores}!utils.\+c@{utils.\+c}}
+\subsubsection{\texorpdfstring{sort\+\_\+scores()}{sort\_scores()}}
+{\footnotesize\ttfamily void sort\+\_\+scores (\begin{DoxyParamCaption}\item[{char}]{arr2\mbox{[}\+S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+Z\+E\mbox{]}\mbox{[}255\mbox{]},  }\item[{int}]{arr\mbox{[}\+S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{utils_8c_a4e28e315203b18b4525ca09b14fffb98_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a4e28e315203b18b4525ca09b14fffb98_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8c_aaa1b351d3bffbe47c309ec8c8efdf24d}\label{utils_8c_aaa1b351d3bffbe47c309ec8c8efdf24d}} 
+\index{utils.\+c@{utils.\+c}!swap\+\_\+c@{swap\+\_\+c}}
+\index{swap\+\_\+c@{swap\+\_\+c}!utils.\+c@{utils.\+c}}
+\subsubsection{\texorpdfstring{swap\+\_\+c()}{swap\_c()}}
+{\footnotesize\ttfamily void swap\+\_\+c (\begin{DoxyParamCaption}\item[{char $\ast$}]{xp,  }\item[{char $\ast$}]{yp }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_aaa1b351d3bffbe47c309ec8c8efdf24d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8c_a34615d175cd22e5e2cccb4cfce61822d}\label{utils_8c_a34615d175cd22e5e2cccb4cfce61822d}} 
+\index{utils.\+c@{utils.\+c}!swap\+\_\+i@{swap\+\_\+i}}
+\index{swap\+\_\+i@{swap\+\_\+i}!utils.\+c@{utils.\+c}}
+\subsubsection{\texorpdfstring{swap\+\_\+i()}{swap\_i()}}
+{\footnotesize\ttfamily void swap\+\_\+i (\begin{DoxyParamCaption}\item[{int $\ast$}]{xp,  }\item[{int $\ast$}]{yp }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a34615d175cd22e5e2cccb4cfce61822d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8c_a81621440b3d65680979425e39aa8c789}\label{utils_8c_a81621440b3d65680979425e39aa8c789}} 
+\index{utils.\+c@{utils.\+c}!util\+\_\+get\+\_\+\+L\+SB@{util\+\_\+get\+\_\+\+L\+SB}}
+\index{util\+\_\+get\+\_\+\+L\+SB@{util\+\_\+get\+\_\+\+L\+SB}!utils.\+c@{utils.\+c}}
+\subsubsection{\texorpdfstring{util\+\_\+get\+\_\+\+L\+S\+B()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+L\+SB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{lsb }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{utils_8c_a81621440b3d65680979425e39aa8c789_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8c_a6a880076cd2ec468834438b6e0c58836}\label{utils_8c_a6a880076cd2ec468834438b6e0c58836}} 
+\index{utils.\+c@{utils.\+c}!util\+\_\+get\+\_\+\+M\+SB@{util\+\_\+get\+\_\+\+M\+SB}}
+\index{util\+\_\+get\+\_\+\+M\+SB@{util\+\_\+get\+\_\+\+M\+SB}!utils.\+c@{utils.\+c}}
+\subsubsection{\texorpdfstring{util\+\_\+get\+\_\+\+M\+S\+B()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+M\+SB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{msb }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{utils_8c_a6a880076cd2ec468834438b6e0c58836_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8c_a79a031a8611f5b2d6afa4158e92b0fb4}\label{utils_8c_a79a031a8611f5b2d6afa4158e92b0fb4}} 
+\index{utils.\+c@{utils.\+c}!util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}}
+\index{util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}!utils.\+c@{utils.\+c}}
+\subsubsection{\texorpdfstring{util\+\_\+sys\+\_\+inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int() util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_a79a031a8611f5b2d6afa4158e92b0fb4_icgraph}
+\end{center}
+\end{figure}

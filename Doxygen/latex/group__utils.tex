@@ -1,0 +1,424 @@
+\hypertarget{group__utils}{}\section{utils}
+\label{group__utils}\index{utils@{utils}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structObject}{Object}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structObject}{Object} struct for better management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__utils_gadf2c712678d6d4f09563efeeba1c09c1}{S\+E\+C\+O\+N\+DS}(n)~(60$\ast$n)
+\item 
+\#define \hyperlink{group__utils_ga2cd109632a6dcccaa80b43561b1ab700}{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}~1024
+\item 
+\#define \hyperlink{group__utils_ga6974d08a74da681b3957b2fead2608b8}{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}~768
+\item 
+\#define \hyperlink{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}~10
+\item 
+\#define \hyperlink{group__utils_gafe7e7ed956ca5dbee657f5fa7e1f4e9a}{L\+E\+T\+T\+E\+R\+S\+\_\+\+W\+I\+D\+TH}~11
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structObject}{Object} \hyperlink{group__utils_gab1287b6141419421dc5c14b9f7756b0a}{Object}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structObject}{Object} struct for better management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag} \{ \newline
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcade5dc3e0dbd007d995ed3e37bde5ce7e}{P\+L\+A\+Y\+ER}, 
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca5ce368bdfc444a87fef6c208b4101571}{E\+N\+E\+MY}, 
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca8bda58832a68157abbcdcbb92f2e797c}{F\+U\+EL}, 
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca2c2ba2ae05d0e6c35b68d51aadbe5a25}{P\+L\+A\+T\+F\+O\+RM}, 
+\newline
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcada3ded2e79d0642e248de91bc64d8c04}{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+R\+O\+K\+EN}, 
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca595f17785fbf7e4f7febb638e4a680d9}{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+M\+O\+V\+I\+NG}, 
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcabd11813ad5c217a8d8d07c1d6cb01b1e}{S\+H\+OT}, 
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca4f23dbcf261e79c755c4f99cf1850c0c}{B\+C\+K\+G\+R\+ND}, 
+\newline
+\hyperlink{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcae79489c2ae437e5e07da3ec10e5062a9}{O\+T\+H\+E\+R\+O\+BJ}
+ \}\begin{DoxyCompactList}\small\item\em To determine what kind of object is in the struct. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \{ \newline
+\hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ac22743f1fc74de09544ecc9bab74a17b}{M\+A\+I\+N\+\_\+\+M\+E\+NU}, 
+\hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ad50cf309d7568040619ed26ee6835a84}{G\+A\+ME}, 
+\hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2a871723195985a4ae22d7e10d99bf8a00}{G\+A\+M\+E\+\_\+\+O\+V\+ER}, 
+\hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2aa0567990ca6272278d71effe9bd3f7c8}{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+RD}, 
+\newline
+\hyperlink{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2adc6f24fd6915a3f2786a1b7045406924}{E\+ND}
+ \}\begin{DoxyCompactList}\small\item\em Current game screen. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structObject}{Object} \hyperlink{group__utils_gad24d82cbacfb1bf3af2491088d770602}{new\+Object} (int x, int y, xpm\+\_\+image\+\_\+t xpm, enum \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag} \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag})
+\begin{DoxyCompactList}\small\item\em Creates a new object. \end{DoxyCompactList}\item 
+bool() \hyperlink{group__utils_gaf433e5aeb6e9df7b15e233a2c4251577}{colides} (\hyperlink{structObject}{Object} o1, \hyperlink{structObject}{Object} o2)
+\begin{DoxyCompactList}\small\item\em Verifies if a o1 colides with o2. \end{DoxyCompactList}\item 
+xpm\+\_\+map\+\_\+t \hyperlink{group__utils_gaf0aa8dc23073c285e1b6b0c3ae16aefb}{get\+Number\+X\+PM} (int n)
+\begin{DoxyCompactList}\small\item\em Get the xpm for a given integer from 0 to 9. \end{DoxyCompactList}\item 
+xpm\+\_\+map\+\_\+t \hyperlink{group__utils_ga8e2a12eed020ad751697c4f2d1a725dc}{get\+Letter\+X\+PM} (char c)
+\begin{DoxyCompactList}\small\item\em Gets the xpm for a given character. \end{DoxyCompactList}\item 
+char \hyperlink{group__utils_ga7891ce0c95b80f1294517ff05b7cb962}{get\+Code\+Char} (uint8\+\_\+t code)
+\begin{DoxyCompactList}\small\item\em Get the char from a scancode. \end{DoxyCompactList}\item 
+void \hyperlink{group__utils_gad4300b6e93d7638f0ca14875cf7476cf}{change\+\_\+game\+\_\+state} (enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} $\ast$ost, enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} nst)
+\begin{DoxyCompactList}\small\item\em Changes the state of the game. \end{DoxyCompactList}\item 
+void \hyperlink{group__utils_gabe39d5da16482ce154af88c3f78a1000}{draw\+\_\+text\+\_\+from\+\_\+keyboard} (char $\ast$\hyperlink{group__Game-Over-Menu_gae3b2d5dad8a568a12752edcea2435e50}{str}, uint8\+\_\+t \hyperlink{group__Proj_ga325819a8e492ac69542e8b31705af6e9}{data}, int $\ast$\hyperlink{group__Game-Over-Menu_ga439227feff9d7f55384e8780cfc2eb82}{size}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a text in screen from the user input. \end{DoxyCompactList}\item 
+void \hyperlink{group__utils_ga1214184725b2f89d6ae427ecd9041295}{load\+\_\+scores} ()
+\begin{DoxyCompactList}\small\item\em Loads the scoreboard from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__utils_gaea8b4e1f4895ce5a0be5dbf42864669c}{Object\+::x}
+\item 
+int \hyperlink{group__utils_ga9ed372592e77352c832d721ad88b9aec}{Object\+::y}
+\item 
+int \hyperlink{group__utils_ga93596e8f620874b99326f8632365c8f5}{Object\+::width}
+\item 
+int \hyperlink{group__utils_gacda1358783bae0b0071ae66e3fc26737}{Object\+::height}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{group__utils_gaa49ab131cd6d6c156d2c78c6501ba17c}{Object\+::sprite}
+\item 
+enum \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag} \hyperlink{group__utils_gaac0293be1f10fd2268ddeaac7184600d}{Object\+::object\+\_\+tag}
+\item 
+bool \hyperlink{group__utils_gac16b5f9f4fa1d1787dd0937b48d62377}{Object\+::active}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Usefull functions, structures and definitions for the working of the project 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__utils_gafe7e7ed956ca5dbee657f5fa7e1f4e9a}\label{group__utils_gafe7e7ed956ca5dbee657f5fa7e1f4e9a}} 
+\index{utils@{utils}!L\+E\+T\+T\+E\+R\+S\+\_\+\+W\+I\+D\+TH@{L\+E\+T\+T\+E\+R\+S\+\_\+\+W\+I\+D\+TH}}
+\index{L\+E\+T\+T\+E\+R\+S\+\_\+\+W\+I\+D\+TH@{L\+E\+T\+T\+E\+R\+S\+\_\+\+W\+I\+D\+TH}!utils@{utils}}
+\subsubsection{\texorpdfstring{L\+E\+T\+T\+E\+R\+S\+\_\+\+W\+I\+D\+TH}{LETTERS\_WIDTH}}
+{\footnotesize\ttfamily \#define L\+E\+T\+T\+E\+R\+S\+\_\+\+W\+I\+D\+TH~11}
+
+\mbox{\Hypertarget{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}\label{group__utils_ga85e9c9dc96b1373ebdb408da38eb5367}} 
+\index{utils@{utils}!S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE@{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}}
+\index{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE@{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}!utils@{utils}}
+\subsubsection{\texorpdfstring{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE}{SCORE\_BOARD\_SIZE}}
+{\footnotesize\ttfamily \#define S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE~10}
+
+\mbox{\Hypertarget{group__utils_ga6974d08a74da681b3957b2fead2608b8}\label{group__utils_ga6974d08a74da681b3957b2fead2608b8}} 
+\index{utils@{utils}!S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT@{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}}
+\index{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT@{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}!utils@{utils}}
+\subsubsection{\texorpdfstring{S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT}{SCREEN\_HEIGHT}}
+{\footnotesize\ttfamily \#define S\+C\+R\+E\+E\+N\+\_\+\+H\+E\+I\+G\+HT~768}
+
+\mbox{\Hypertarget{group__utils_ga2cd109632a6dcccaa80b43561b1ab700}\label{group__utils_ga2cd109632a6dcccaa80b43561b1ab700}} 
+\index{utils@{utils}!S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH@{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}}
+\index{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH@{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}!utils@{utils}}
+\subsubsection{\texorpdfstring{S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH}{SCREEN\_WIDTH}}
+{\footnotesize\ttfamily \#define S\+C\+R\+E\+E\+N\+\_\+\+W\+I\+D\+TH~1024}
+
+\mbox{\Hypertarget{group__utils_gadf2c712678d6d4f09563efeeba1c09c1}\label{group__utils_gadf2c712678d6d4f09563efeeba1c09c1}} 
+\index{utils@{utils}!S\+E\+C\+O\+N\+DS@{S\+E\+C\+O\+N\+DS}}
+\index{S\+E\+C\+O\+N\+DS@{S\+E\+C\+O\+N\+DS}!utils@{utils}}
+\subsubsection{\texorpdfstring{S\+E\+C\+O\+N\+DS}{SECONDS}}
+{\footnotesize\ttfamily \#define S\+E\+C\+O\+N\+DS(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~(60$\ast$n)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__utils_gab1287b6141419421dc5c14b9f7756b0a}\label{group__utils_gab1287b6141419421dc5c14b9f7756b0a}} 
+\index{utils@{utils}!Object@{Object}}
+\index{Object@{Object}!utils@{utils}}
+\subsubsection{\texorpdfstring{Object}{Object}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structObject}{Object} \hyperlink{structObject}{Object}}
+
+
+
+\hyperlink{structObject}{Object} struct for better management. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}\label{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}} 
+\index{utils@{utils}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!utils@{utils}}
+\subsubsection{\texorpdfstring{game\+\_\+state}{game\_state}}
+{\footnotesize\ttfamily enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state}}
+
+
+
+Current game screen. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+I\+N\+\_\+\+M\+E\+NU@{M\+A\+I\+N\+\_\+\+M\+E\+NU}!utils@{utils}}\index{utils@{utils}!M\+A\+I\+N\+\_\+\+M\+E\+NU@{M\+A\+I\+N\+\_\+\+M\+E\+NU}}}\mbox{\Hypertarget{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ac22743f1fc74de09544ecc9bab74a17b}\label{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ac22743f1fc74de09544ecc9bab74a17b}} 
+M\+A\+I\+N\+\_\+\+M\+E\+NU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+A\+ME@{G\+A\+ME}!utils@{utils}}\index{utils@{utils}!G\+A\+ME@{G\+A\+ME}}}\mbox{\Hypertarget{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ad50cf309d7568040619ed26ee6835a84}\label{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2ad50cf309d7568040619ed26ee6835a84}} 
+G\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+A\+M\+E\+\_\+\+O\+V\+ER@{G\+A\+M\+E\+\_\+\+O\+V\+ER}!utils@{utils}}\index{utils@{utils}!G\+A\+M\+E\+\_\+\+O\+V\+ER@{G\+A\+M\+E\+\_\+\+O\+V\+ER}}}\mbox{\Hypertarget{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2a871723195985a4ae22d7e10d99bf8a00}\label{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2a871723195985a4ae22d7e10d99bf8a00}} 
+G\+A\+M\+E\+\_\+\+O\+V\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+RD@{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+RD}!utils@{utils}}\index{utils@{utils}!S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+RD@{S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+RD}}}\mbox{\Hypertarget{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2aa0567990ca6272278d71effe9bd3f7c8}\label{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2aa0567990ca6272278d71effe9bd3f7c8}} 
+S\+C\+O\+R\+E\+\_\+\+B\+O\+A\+RD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+ND@{E\+ND}!utils@{utils}}\index{utils@{utils}!E\+ND@{E\+ND}}}\mbox{\Hypertarget{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2adc6f24fd6915a3f2786a1b7045406924}\label{group__utils_ggad0ed1832dd134806ad335cdcc1a59ad2adc6f24fd6915a3f2786a1b7045406924}} 
+E\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}\label{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}} 
+\index{utils@{utils}!object\+\_\+tag@{object\+\_\+tag}}
+\index{object\+\_\+tag@{object\+\_\+tag}!utils@{utils}}
+\subsubsection{\texorpdfstring{object\+\_\+tag}{object\_tag}}
+{\footnotesize\ttfamily enum \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag}}
+
+
+
+To determine what kind of object is in the struct. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+Y\+ER@{P\+L\+A\+Y\+ER}!utils@{utils}}\index{utils@{utils}!P\+L\+A\+Y\+ER@{P\+L\+A\+Y\+ER}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcade5dc3e0dbd007d995ed3e37bde5ce7e}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcade5dc3e0dbd007d995ed3e37bde5ce7e}} 
+P\+L\+A\+Y\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+N\+E\+MY@{E\+N\+E\+MY}!utils@{utils}}\index{utils@{utils}!E\+N\+E\+MY@{E\+N\+E\+MY}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca5ce368bdfc444a87fef6c208b4101571}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca5ce368bdfc444a87fef6c208b4101571}} 
+E\+N\+E\+MY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+U\+EL@{F\+U\+EL}!utils@{utils}}\index{utils@{utils}!F\+U\+EL@{F\+U\+EL}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca8bda58832a68157abbcdcbb92f2e797c}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca8bda58832a68157abbcdcbb92f2e797c}} 
+F\+U\+EL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+T\+F\+O\+RM@{P\+L\+A\+T\+F\+O\+RM}!utils@{utils}}\index{utils@{utils}!P\+L\+A\+T\+F\+O\+RM@{P\+L\+A\+T\+F\+O\+RM}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca2c2ba2ae05d0e6c35b68d51aadbe5a25}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca2c2ba2ae05d0e6c35b68d51aadbe5a25}} 
+P\+L\+A\+T\+F\+O\+RM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+R\+O\+K\+EN@{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+R\+O\+K\+EN}!utils@{utils}}\index{utils@{utils}!P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+R\+O\+K\+EN@{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+R\+O\+K\+EN}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcada3ded2e79d0642e248de91bc64d8c04}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcada3ded2e79d0642e248de91bc64d8c04}} 
+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+B\+R\+O\+K\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+M\+O\+V\+I\+NG@{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+M\+O\+V\+I\+NG}!utils@{utils}}\index{utils@{utils}!P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+M\+O\+V\+I\+NG@{P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+M\+O\+V\+I\+NG}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca595f17785fbf7e4f7febb638e4a680d9}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca595f17785fbf7e4f7febb638e4a680d9}} 
+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+M\+O\+V\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+H\+OT@{S\+H\+OT}!utils@{utils}}\index{utils@{utils}!S\+H\+OT@{S\+H\+OT}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcabd11813ad5c217a8d8d07c1d6cb01b1e}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcabd11813ad5c217a8d8d07c1d6cb01b1e}} 
+S\+H\+OT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+C\+K\+G\+R\+ND@{B\+C\+K\+G\+R\+ND}!utils@{utils}}\index{utils@{utils}!B\+C\+K\+G\+R\+ND@{B\+C\+K\+G\+R\+ND}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca4f23dbcf261e79c755c4f99cf1850c0c}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fca4f23dbcf261e79c755c4f99cf1850c0c}} 
+B\+C\+K\+G\+R\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+T\+H\+E\+R\+O\+BJ@{O\+T\+H\+E\+R\+O\+BJ}!utils@{utils}}\index{utils@{utils}!O\+T\+H\+E\+R\+O\+BJ@{O\+T\+H\+E\+R\+O\+BJ}}}\mbox{\Hypertarget{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcae79489c2ae437e5e07da3ec10e5062a9}\label{group__utils_gga3eff9ebd9f241e211e00b991e2ac60fcae79489c2ae437e5e07da3ec10e5062a9}} 
+O\+T\+H\+E\+R\+O\+BJ&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__utils_gad4300b6e93d7638f0ca14875cf7476cf}\label{group__utils_gad4300b6e93d7638f0ca14875cf7476cf}} 
+\index{utils@{utils}!change\+\_\+game\+\_\+state@{change\+\_\+game\+\_\+state}}
+\index{change\+\_\+game\+\_\+state@{change\+\_\+game\+\_\+state}!utils@{utils}}
+\subsubsection{\texorpdfstring{change\+\_\+game\+\_\+state()}{change\_game\_state()}}
+{\footnotesize\ttfamily void change\+\_\+game\+\_\+state (\begin{DoxyParamCaption}\item[{enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} $\ast$}]{ost,  }\item[{enum \hyperlink{group__utils_gad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state}}]{nst }\end{DoxyParamCaption})}
+
+
+
+Changes the state of the game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_gad4300b6e93d7638f0ca14875cf7476cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_gad4300b6e93d7638f0ca14875cf7476cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_gaf433e5aeb6e9df7b15e233a2c4251577}\label{group__utils_gaf433e5aeb6e9df7b15e233a2c4251577}} 
+\index{utils@{utils}!colides@{colides}}
+\index{colides@{colides}!utils@{utils}}
+\subsubsection{\texorpdfstring{colides()}{colides()}}
+{\footnotesize\ttfamily bool() colides (\begin{DoxyParamCaption}\item[{\hyperlink{structObject}{Object}}]{o1,  }\item[{\hyperlink{structObject}{Object}}]{o2 }\end{DoxyParamCaption})}
+
+
+
+Verifies if a o1 colides with o2. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_gaf433e5aeb6e9df7b15e233a2c4251577_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_gabe39d5da16482ce154af88c3f78a1000}\label{group__utils_gabe39d5da16482ce154af88c3f78a1000}} 
+\index{utils@{utils}!draw\+\_\+text\+\_\+from\+\_\+keyboard@{draw\+\_\+text\+\_\+from\+\_\+keyboard}}
+\index{draw\+\_\+text\+\_\+from\+\_\+keyboard@{draw\+\_\+text\+\_\+from\+\_\+keyboard}!utils@{utils}}
+\subsubsection{\texorpdfstring{draw\+\_\+text\+\_\+from\+\_\+keyboard()}{draw\_text\_from\_keyboard()}}
+{\footnotesize\ttfamily void draw\+\_\+text\+\_\+from\+\_\+keyboard (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{uint8\+\_\+t}]{data,  }\item[{int $\ast$}]{size,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw a text in screen from the user input. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_gabe39d5da16482ce154af88c3f78a1000_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_gabe39d5da16482ce154af88c3f78a1000_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_ga7891ce0c95b80f1294517ff05b7cb962}\label{group__utils_ga7891ce0c95b80f1294517ff05b7cb962}} 
+\index{utils@{utils}!get\+Code\+Char@{get\+Code\+Char}}
+\index{get\+Code\+Char@{get\+Code\+Char}!utils@{utils}}
+\subsubsection{\texorpdfstring{get\+Code\+Char()}{getCodeChar()}}
+{\footnotesize\ttfamily char get\+Code\+Char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{code }\end{DoxyParamCaption})}
+
+
+
+Get the char from a scancode. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_ga7891ce0c95b80f1294517ff05b7cb962_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_ga8e2a12eed020ad751697c4f2d1a725dc}\label{group__utils_ga8e2a12eed020ad751697c4f2d1a725dc}} 
+\index{utils@{utils}!get\+Letter\+X\+PM@{get\+Letter\+X\+PM}}
+\index{get\+Letter\+X\+PM@{get\+Letter\+X\+PM}!utils@{utils}}
+\subsubsection{\texorpdfstring{get\+Letter\+X\+P\+M()}{getLetterXPM()}}
+{\footnotesize\ttfamily xpm\+\_\+map\+\_\+t get\+Letter\+X\+PM (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Gets the xpm for a given character. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_ga8e2a12eed020ad751697c4f2d1a725dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_gaf0aa8dc23073c285e1b6b0c3ae16aefb}\label{group__utils_gaf0aa8dc23073c285e1b6b0c3ae16aefb}} 
+\index{utils@{utils}!get\+Number\+X\+PM@{get\+Number\+X\+PM}}
+\index{get\+Number\+X\+PM@{get\+Number\+X\+PM}!utils@{utils}}
+\subsubsection{\texorpdfstring{get\+Number\+X\+P\+M()}{getNumberXPM()}}
+{\footnotesize\ttfamily xpm\+\_\+map\+\_\+t get\+Number\+X\+PM (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Get the xpm for a given integer from 0 to 9. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_gaf0aa8dc23073c285e1b6b0c3ae16aefb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_ga1214184725b2f89d6ae427ecd9041295}\label{group__utils_ga1214184725b2f89d6ae427ecd9041295}} 
+\index{utils@{utils}!load\+\_\+scores@{load\+\_\+scores}}
+\index{load\+\_\+scores@{load\+\_\+scores}!utils@{utils}}
+\subsubsection{\texorpdfstring{load\+\_\+scores()}{load\_scores()}}
+{\footnotesize\ttfamily void load\+\_\+scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the scoreboard from file. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{group__utils_ga1214184725b2f89d6ae427ecd9041295_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_ga1214184725b2f89d6ae427ecd9041295_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_gad24d82cbacfb1bf3af2491088d770602}\label{group__utils_gad24d82cbacfb1bf3af2491088d770602}} 
+\index{utils@{utils}!new\+Object@{new\+Object}}
+\index{new\+Object@{new\+Object}!utils@{utils}}
+\subsubsection{\texorpdfstring{new\+Object()}{newObject()}}
+{\footnotesize\ttfamily \hyperlink{structObject}{Object} new\+Object (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{xpm\+\_\+image\+\_\+t}]{xpm,  }\item[{enum \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag}}]{object\+\_\+tag }\end{DoxyParamCaption})}
+
+
+
+Creates a new object. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_gad24d82cbacfb1bf3af2491088d770602_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__utils_gac16b5f9f4fa1d1787dd0937b48d62377}\label{group__utils_gac16b5f9f4fa1d1787dd0937b48d62377}} 
+\index{utils@{utils}!active@{active}}
+\index{active@{active}!utils@{utils}}
+\subsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool Object\+::active}
+
+\mbox{\Hypertarget{group__utils_gacda1358783bae0b0071ae66e3fc26737}\label{group__utils_gacda1358783bae0b0071ae66e3fc26737}} 
+\index{utils@{utils}!height@{height}}
+\index{height@{height}!utils@{utils}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Object\+::height}
+
+\mbox{\Hypertarget{group__utils_gaac0293be1f10fd2268ddeaac7184600d}\label{group__utils_gaac0293be1f10fd2268ddeaac7184600d}} 
+\index{utils@{utils}!object\+\_\+tag@{object\+\_\+tag}}
+\index{object\+\_\+tag@{object\+\_\+tag}!utils@{utils}}
+\subsubsection{\texorpdfstring{object\+\_\+tag}{object\_tag}}
+{\footnotesize\ttfamily enum \hyperlink{group__utils_ga3eff9ebd9f241e211e00b991e2ac60fc}{object\+\_\+tag} Object\+::object\+\_\+tag}
+
+\mbox{\Hypertarget{group__utils_gaa49ab131cd6d6c156d2c78c6501ba17c}\label{group__utils_gaa49ab131cd6d6c156d2c78c6501ba17c}} 
+\index{utils@{utils}!sprite@{sprite}}
+\index{sprite@{sprite}!utils@{utils}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Object\+::sprite}
+
+\mbox{\Hypertarget{group__utils_ga93596e8f620874b99326f8632365c8f5}\label{group__utils_ga93596e8f620874b99326f8632365c8f5}} 
+\index{utils@{utils}!width@{width}}
+\index{width@{width}!utils@{utils}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Object\+::width}
+
+\mbox{\Hypertarget{group__utils_gaea8b4e1f4895ce5a0be5dbf42864669c}\label{group__utils_gaea8b4e1f4895ce5a0be5dbf42864669c}} 
+\index{utils@{utils}!x@{x}}
+\index{x@{x}!utils@{utils}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Object\+::x}
+
+\mbox{\Hypertarget{group__utils_ga9ed372592e77352c832d721ad88b9aec}\label{group__utils_ga9ed372592e77352c832d721ad88b9aec}} 
+\index{utils@{utils}!y@{y}}
+\index{y@{y}!utils@{utils}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Object\+::y}
+
